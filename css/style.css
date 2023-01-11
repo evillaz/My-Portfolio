@@ -1,0 +1,155 @@
+body  {
+  width: 375px;
+  margin:0;
+}
+header  {
+  background-color: #3C3A39;
+}
+nav {
+  height: 48px;
+  width: 375px;
+  display: flex;
+  align-items: center;
+  left: 0px;
+  top: 44px;
+  border-radius: 0px;
+}
+#logo-placeholder {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 12px;
+  height: 44px;
+  width: 101px;
+}
+h2  {
+  height: 24px;
+  width: 77px;
+  left: 12px;
+  top: 10px;
+  border-radius: nullpx;
+  margin: 0px;
+  font-family: 'Roboto' ;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 10px 12px 10px 12px;
+}
+#normal-button  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  left: 311px;
+}
+#menu-button  {
+  width: 24px;
+  height: 24px;
+  left: 8px;
+  top: 8px;
+  border-radius: 0px;
+  display: flex;
+  order: 0;
+  flex-grow: 0;
+  padding: 8px;
+}
+#headline {
+  background-color: #1C1A19;
+  height: 590px;
+  width: 375px;
+  left: 0px;
+  top: 92px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position:relative;
+  top: 0px;
+}
+#primary-text {
+  left: 24px;
+  top: 120px;
+  border-radius: nullpx;
+  width: 327px;
+  height: 124px;
+  margin: 0px;
+  position: absolute ;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #FF6B00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#supporting-text  {
+  position: absolute;
+  left: 24px;
+  top: 256px;
+  width: 327px;
+  height: 27px;
+  margin: 0px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFF5E1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#description  {
+  height: 123px;
+  width: 327px;
+  left: 24px;
+  top: 295px;
+  border-radius: nullpx;
+  position:absolute;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 0px;
+}
+#social-media {
+  left: 24px;
+  top: 430px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  position:absolute;
+  width: 200px;
+  height: 40px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+#background-decoration  {
+  position: absolute;
+  border-radius: 0px;
+  left: 228px;
+  top: 225px;
+}
