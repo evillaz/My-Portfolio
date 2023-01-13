@@ -73,6 +73,8 @@ This is one of the first projects on the early days on microverse program.
 - **A warm introduction into the development world**
 - **linters applied to the project**
 - **First understandings on flex box management for HTML & CSS**
+- **Firs applies of Flexbox and Css gridbox**
+- **Project with all green lights on linters**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,6 +223,7 @@ I would like to thank my family for the encourage on taking this strong step int
 - **What was your thinking process to solve the requirements?**
 
   - First i tried to address each one of the requirements and solve them individually to keep integrating them as i was progressing.
+  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
