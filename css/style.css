@@ -290,7 +290,7 @@ button {
   align-items: flex-start;
   gap: 24px;
   padding: 0 24px;
-  background: url('/icons/amBackground.svg') right bottom no-repeat, url('/icons/amVector.svg') bottom no-repeat;
+  background: src('/icons/amBackground.svg') right bottom no-repeat, url('/icons/amVector.svg') bottom no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
   background-size: auto, 100%;
@@ -369,13 +369,13 @@ button {
 }
 
 #lanIcon {
-  content: url('/icons/lanIcon.svg');
+  content: url("../icons/lanIcon.svg");
 }
 
 #frameIcon {
-  content: url('/icons/frameIcon.svg');
+  content: url("../icons/frameIcon.svg");
 }
 
 #skillIcon {
-  content: url('/icons/skillsIcon.svg');
+  content: url("../icons/skillsIcon.svg");
 }
