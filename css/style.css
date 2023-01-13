@@ -37,8 +37,7 @@ nav {
 }
 
 #logo-placeholder {
-  padding: 10px 12px;
-  margin: 2px 12px;
+  padding: 12px 24px;
 }
 
 a {
@@ -95,13 +94,23 @@ h1 {
   color: #ff6b00;
 }
 
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 #supporting-text {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 133%;
   color: #fff5e1;
+}
+
+p {
+ margin: 0;
+ padding: 0;
 }
 
 #description {
@@ -109,7 +118,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
   color: #fff;
 }
 
@@ -132,7 +141,12 @@ h1 {
   margin: 0;
 }
 
-#title h1 {
+h2{
+  margin: 0;
+  padding: 0;
+}
+
+#title h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -356,6 +370,11 @@ button {
 
 #skillFeatures {
   align-items: center;
+}
+
+h4{
+  margin: 0;
+  padding: 0;
 }
 
 .featureText {
