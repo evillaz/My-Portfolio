@@ -1,16 +1,28 @@
-body {
-  max-width: 100vm;
-  max-height: 100vh;
-  margin: 0;
+@font-face {
+  font-family: 'InaiMathi';
+  src: url("../fonts/InaiMathi.woff") format('woff');
 }
 
-.container {
-  list-style: none;
+body {
+  display: block;
+  margin: 0;
+  background-color: #fff;
+}
+
+#main {
+  display: grid;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  gap: 120px;
+}
+
+.flex-container {
   display: flex;
   flex-direction: column;
+}
+
+#home {
+  list-style: none;
+  padding: 0;
 }
 
 header {
@@ -25,8 +37,7 @@ nav {
 }
 
 #logo-placeholder {
-  padding: 10px 12px;
-  margin: 2px 12px;
+  padding: 12px 24px;
 }
 
 a {
@@ -51,10 +62,8 @@ a {
 #headline {
   list-style: none;
   margin: 0;
-  display: flex;
-  flex-direction: column;
   background-color: #1c1a19;
-  background-image: url(/icons/Illustration.svg);
+  background-image: url("../icons/Illustration.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
   padding: 120px 24px;
@@ -65,6 +74,7 @@ a {
 
 ul {
   list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -84,13 +94,23 @@ h1 {
   color: #ff6b00;
 }
 
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 #supporting-text {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 133%;
   color: #fff5e1;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 #description {
@@ -98,12 +118,283 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
   color: #fff;
 }
 
 #social-media {
-  display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0;
+}
+
+#recent-works {
+  display: grid;
+  margin: 0;
+  padding: 0 24px;
+  gap: 24px;
+}
+
+#title {
+  justify-content: center;
+  flex: 1;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#title h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 131%;
+  text-align: center;
+  background-image: url("../icons/Vectortitle.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: content-box;
+}
+
+#multi-post {
+  align-items: flex-start;
+  flex: 0;
+  margin: 0;
+  padding-top: 56px;
+}
+
+.placeholder {
+  background-image: url("../icons/ImgPlaceholder.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 72%;
+  height: 0;
+}
+
+#multi-postBlock {
+  gap: 12px;
+  padding-top: 24px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+#titlePost {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 138%;
+  flex-grow: 1;
+}
+
+#mpSupportText {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #091e42;
+}
+
+#tagGroup {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+}
+
+.tag {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
+.tagText {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 133%;
+  color: #091e42;
+}
+
+*:enabled {
+  background: #ff6b00;
+}
+
+.button:hover {
+  background: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+button {
+  padding: 12px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 141%;
+  color: #fff;
+}
+
+#cardElements {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 76px 16px 0;
+  align-items: flex-start;
+  flex: 1;
+}
+
+#cardWork {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../icons/cardBackground.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#cardTitle {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 138%;
+  color: #fff;
+}
+
+#cardDesc {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+
+#cardTags .tag {
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+}
+
+#cardTags .tagText {
+  color: #fff;
+}
+
+#cardButton {
+  padding-top: 22px;
+}
+
+#cardWork button {
+  width: 100%;
+}
+
+#aboutMyself {
+  padding-top: 120px;
+  background: #1c1a19;
+  gap: 8px;
+}
+
+#aboutMe {
+  align-items: flex-start;
+  gap: 24px;
+  padding: 0 24px;
+  background: url("../icons/amBackground.svg") right bottom no-repeat, url("../icons/amVector.svg") bottom no-repeat;
+  background-repeat: no-repeat;
+  background-size: auto, 100%;
+  background-origin: border-box, content-box;
+}
+
+.amPlaceHolder {
+  margin: 0;
+  width: max-content;
+  padding-top: 185px;
+}
+
+#amTitle {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 122%;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+#amDesc {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f4f5f7;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 0;
+  gap: 24px;
+}
+
+#skillBlock {
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+#skill {
+  flex-direction: row;
+  flex: 1 1;
+  gap: 24px;
+}
+
+.skillImg {
+  flex-grow: 0;
+}
+
+#skillTxt {
+  font-family: 'InaiMathi', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 138%;
+  color: #fff;
+}
+
+#skillFeatures {
+  align-items: center;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.featureText {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 194%;
+  color: #fff;
+}
+
+#lanIcon {
+  content: url("../icons/lanIcon.svg");
+}
+
+#frameIcon {
+  content: url("../icons/frameIcon.svg");
+}
+
+#skillIcon {
+  content: url("../icons/skillsIcon.svg");
 }
