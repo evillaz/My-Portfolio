@@ -14,7 +14,7 @@ body {
   gap: 120px;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
   flex-direction: column;
 }
