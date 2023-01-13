@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'InaiMathi';
-  src: url('/fonts/InaiMathi.woff') format('woff');
+  src: url("../fonts/InaiMathi.woff") format('woff');
 }
 
 body {
