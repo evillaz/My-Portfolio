@@ -7,15 +7,18 @@ body {
   display: block;
   margin: 0;
 }
+
 #main {
   display: grid;
   padding: 0;
   gap: 120px;
 }
+
 .flex-container{
   display: flex;
   flex-direction: column;
 }
+
 #home {
   list-style: none;
   padding: 0;
@@ -150,12 +153,13 @@ h1 {
   margin: 0;
   padding-top: 56px;
 }
+
 .placeholder {
   background-image: url(/icons/ImgPlaceholder.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
-  margin:0;
+  margin: 0;
   padding-bottom: 72%;
   height: 0;
 }
@@ -182,7 +186,7 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #091E42;
+  color: #091e42;
 }
 
 #tagGroup {
@@ -194,7 +198,7 @@ h1 {
 
 .tag {
   padding: 10px 12px;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
 }
 
 .tagText {
@@ -203,29 +207,29 @@ h1 {
   font-weight: 500;
   font-size: 15px;
   line-height: 133%;
-  color: #091E42;
+  color: #091e42;
 }
 
 *:enabled {
   background: #ff6b00;
 }
 
-button:hover {
+.button:hover {
   background: #fff5e1;
-  color: #F55800;
-  border: 1px solid #F55800;
+  color: #f55800;
+  border: 1px solid #f55800;
 }
 
 button {
   padding: 12px;
   border: 1px solid transparent;
-  cursor: pointer; 
+  cursor: pointer;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 141%;
-  color: #FFF; 
+  color: #fff;
 }
 
 #cardElements {
@@ -279,16 +283,12 @@ button {
 }
 
 #aboutMyself {
-  display:flex;
-  flex-direction: column;
   padding-top: 120px;
-  background: #1C1A19;
+  background: #1c1a19;
   gap: 8px;
 }
 
 #aboutMe {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: baseline;
   gap: 24px;
@@ -315,27 +315,24 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #F4F5F7;
+  color: #f4f5f7;
 }
 
-#skills{
+#skills {
   display: flex;
   flex-direction: column;
   padding: 120px 0;
   gap: 24px;
 }
+
 #skillBlock {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 24px;
 }
 
 #skill {
-  display: flex;
   flex-direction: row;
-  align-items: center;
   flex: 1 1;
   gap: 24px;
 }
@@ -354,14 +351,13 @@ button {
 }
 
 #skillFeatures {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .featureText {
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  text-align: center;
   font-weight: 400;
   font-size: 22px;
   line-height: 194%;
