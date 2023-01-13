@@ -108,9 +108,9 @@ h3 {
   color: #fff5e1;
 }
 
-p {
- margin: 0;
- padding: 0;
+p{
+  margin: 0;
+  padding: 0;
 }
 
 #description {
@@ -141,7 +141,7 @@ p {
   margin: 0;
 }
 
-h2{
+h2 {
   margin: 0;
   padding: 0;
 }
@@ -372,7 +372,7 @@ button {
   align-items: center;
 }
 
-h4{
+h4 {
   margin: 0;
   padding: 0;
 }
