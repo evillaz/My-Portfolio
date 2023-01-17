@@ -4,9 +4,11 @@
 }
 
 body {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   background-color: #fff;
+  gap: 4px;
 }
 
 #main {
@@ -128,6 +130,15 @@ p {
   padding: 0;
 }
 
+a img {
+  color: #dbd8d7;
+  opacity: 0.5;
+}
+
+a img:hover {
+  opacity: 1.0;
+}
+
 #recent-works {
   display: grid;
   margin: 0;
@@ -231,6 +242,12 @@ h2 {
   background: #fff5e1;
   color: #f55800;
   border: 1px solid #f55800;
+}
+
+.button:active {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid #e05304;
 }
 
 button {
@@ -397,4 +414,86 @@ h4 {
 
 #skillIcon {
   content: url("../icons/skillsIcon.svg");
+}
+
+form {
+  margin: 0;
+}
+
+#formContainer {
+  padding: 0 24px 120px;
+  gap: 58px;
+  align-items: center;
+}
+
+#formContainer li{
+  width: 100%
+}
+
+#contactDescription {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 138%;
+  text-align: center;
+  color: #172B4D;
+}
+
+#formElements {
+  gap: 24px;
+}
+
+.formElement *::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.formElement * {
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  border: 0;
+  padding: 15px 16px;
+}
+
+.formElement input {
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.formElement textarea {
+  background-color: #fbf8f7;
+  padding: 12px;
+}
+
+.formElement:hover *::placeholder {
+  color: #3c3a39;
+  font-weight: bold;
+}
+
+li #submitForm{
+  display: block;
+  align-self: center;
+  width: auto;
+}
+
+footer {
+  border-top: 1px solid #dfe1e6
+}
+
+#footer-media {
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+.footerPlaceHolder {
+  padding: 0 120px 8px;
+  background-image: url("../icons/footerShape.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
