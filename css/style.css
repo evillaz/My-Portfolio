@@ -136,7 +136,7 @@ a img {
 }
 
 a img:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 #recent-works {
@@ -426,8 +426,8 @@ form {
   align-items: center;
 }
 
-#formContainer li{
-  width: 100%
+#formContainer li {
+  width: 100%;
 }
 
 #contactDescription {
@@ -437,7 +437,7 @@ form {
   font-size: 32px;
   line-height: 138%;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 #formElements {
@@ -474,14 +474,14 @@ form {
   font-weight: bold;
 }
 
-li #submitForm{
+li #submitForm {
   display: block;
   align-self: center;
   width: auto;
 }
 
 footer {
-  border-top: 1px solid #dfe1e6
+  border-top: 1px solid #dfe1e6;
 }
 
 #footer-media {
