@@ -132,11 +132,6 @@ p {
 
 a img {
   color: #dbd8d7;
-  opacity: 0.5;
-}
-
-a img:hover {
-  opacity: 1;
 }
 
 #recent-works {
@@ -423,7 +418,6 @@ form {
 #formContainer {
   padding: 0 24px 120px;
   gap: 58px;
-  align-items: center;
 }
 
 #formContainer li {
@@ -467,6 +461,7 @@ form {
 .formElement textarea {
   background-color: #fbf8f7;
   padding: 12px;
+  height: 114px;
 }
 
 .formElement:hover *::placeholder {
@@ -474,9 +469,9 @@ form {
   font-weight: bold;
 }
 
-li #submitForm {
-  display: block;
-  align-self: center;
+#submitForm {
+  display: flex;
+  justify-content: center;
   width: auto;
 }
 
