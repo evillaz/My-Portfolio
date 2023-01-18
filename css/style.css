@@ -229,7 +229,7 @@ h2 {
   color: #091e42;
 }
 
-*:enabled {
+.button:enabled {
   background: #ff6b00;
 }
 
@@ -434,11 +434,11 @@ form {
   color: #172b4d;
 }
 
-#formElements {
+form {
   gap: 24px;
 }
 
-.formElement *::placeholder {
+form *::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -446,7 +446,7 @@ form {
   line-height: 160%;
 }
 
-.formElement * {
+form * {
   width: 100%;
   background-color: #fff;
   margin: 0;
@@ -454,25 +454,24 @@ form {
   padding: 15px 16px;
 }
 
-.formElement input {
+form input {
   border-bottom: 1px solid #dbd8d7;
 }
 
-.formElement textarea {
+form textarea {
   background-color: #fbf8f7;
   padding: 12px;
   height: 114px;
 }
 
-.formElement:hover *::placeholder {
+.formElement:hover::placeholder {
   color: #3c3a39;
   font-weight: bold;
 }
 
 #submitForm {
-  display: flex;
-  justify-content: center;
-  width: auto;
+  width: fit-content;
+  align-self: center;
 }
 
 footer {

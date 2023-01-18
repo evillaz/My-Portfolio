@@ -353,21 +353,11 @@
       </section>
       <section class="flex-container" id="formContainer">
         <p id="contactDescription">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-        <form action="https://formspree.io/f/xnqyndrw" method="POST">
-          <ul class="flex-container" id="formElements">
-            <li class="formElement">
-              <input class="fElement" type="text" name="name" placeholder="Full name" maxlength="30" required>
-            </li>
-            <li class="formElement">
-              <input type="email" name="email" placeholder="Email address" required>
-            </li>
-            <li class="formElement">
-              <textarea name="message" placeholder="Enter text here" maxlength="500" required></textarea>
-            </li>
-            <li id="submitForm">
-              <button class="button" id="subBut" type="submit">Get in touch</button>
-            </li>
-          </ul>
+        <form class="flex-container" action="https://formspree.io/f/xnqyndrw" method="POST">
+          <input class="formElement" type="text" name="name" placeholder="Full name" maxlength="30" required>
+          <input class="formElement" type="email" name="email" placeholder="Email address" required>
+          <textarea class="formElement name="message" placeholder="Enter text here" maxlength="500" required></textarea>
+          <button class="button" id="submitForm" type="submit">Get in touch</button>
         </form>
       </section>
     </div>
