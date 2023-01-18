@@ -8,13 +8,11 @@ body {
   flex-direction: column;
   margin: 0;
   background-color: #fff;
-  gap: 4px;
 }
 
 #main {
   display: grid;
   padding: 0;
-  gap: 120px;
 }
 
 .flex-container {
@@ -36,42 +34,28 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-radius: 0;
+  padding: 0 24px;
 }
 
 #logo-placeholder {
-  padding: 12px 24px;
+  padding: 12px 0;
 }
 
-a {
+#logo-placeholder a {
   border-radius: nullpx;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 133%;
   color: #fff;
   order: 0;
   text-decoration: none;
 }
 
-#normal-button {
-  align-items: flex-start;
-  padding: 8px;
-  margin: 4px 24px;
-}
-
-#headline {
-  list-style: none;
-  margin: 0;
-  background-color: #1c1a19;
-  background-image: url("../icons/Illustration.svg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  padding: 120px 24px;
-  gap: 12px;
-  align-items: flex-start;
-  flex: 1;
+#menu-button {
+  padding: 12px 8px;
 }
 
 ul {
@@ -81,17 +65,89 @@ ul {
   padding: 0;
 }
 
+#deskNavBar {
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  margin: 4px 0;
+  display: none;
+}
+
+#deskNavBar a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 133%;
+  padding: 10px 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #nav-bar {
+    padding: 16px 142px;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  #deskNavBar {
+    display: flex;
+  }
+
+  #logo-placeholder a {
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  #headline {
+    flex-direction: row;
+    gap: 87px;
+    padding: 0 731px 59 36px;
+    background-image: url("../icons/desktopBackgroundHeader.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  #headlineText {
+    order: 1;
+    padding: 192px 0;
+  }
+
+  #primary-text {
+    font-size: 72px;
+    line-height: 113%;
+  }
+
+  #social-media {
+    flex-direction: column;
+    order: 0;
+    align-self: center;
+  }
+
+}
+
 h1 {
   margin: 0;
   padding: 0;
+}
+
+#headline {
+  list-style: none;
+  background-color: #1c1a19;
+  align-items: flex-start;
+}
+
+#headlineText {
+  gap: 12px;
 }
 
 #primary-text {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
-  line-height: 114%;
   letter-spacing: 0.37px;
   color: #ff6b00;
 }
@@ -124,8 +180,31 @@ p {
   color: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  #headline { 
+    gap: 12px;
+    padding: 120px 24px;
+    background-image: url("../icons/Illustration.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  #headlineText {
+    order: 0;
+  }
+
+  #primary-text {
+    font-size: 56px;
+    line-height: 114%;
+  }
+
+  #social-media {
+    flex-direction: row;
+    order: 1;
+  }
+}
+
 #social-media {
-  flex-direction: row;
   align-items: center;
   padding: 0;
 }
@@ -134,10 +213,12 @@ a img {
   color: #dbd8d7;
 }
 
+
+
 #recent-works {
   display: grid;
   margin: 0;
-  padding: 0 24px;
+  padding: 120px 24px;
   gap: 24px;
 }
 
@@ -308,14 +389,11 @@ button {
 }
 
 #aboutMyself {
-  padding-top: 120px;
   background: #1c1a19;
   gap: 8px;
 }
 
-#aboutMe {
-  align-items: flex-start;
-  gap: 24px;
+#amHolder{
   padding: 0 24px;
   background: url("../icons/amBackground.svg") right bottom no-repeat, url("../icons/amVector.svg") bottom no-repeat;
   background-repeat: no-repeat;
@@ -323,10 +401,16 @@ button {
   background-origin: border-box, content-box;
 }
 
+#aboutMe {
+  align-items: flex-start;
+  gap: 24px;
+  padding: 120px 0;
+}
+
 .amPlaceHolder {
   margin: 0;
   width: max-content;
-  padding-top: 185px;
+  padding-top: 79.52px;
 }
 
 #amTitle {
@@ -351,8 +435,8 @@ button {
 #skills {
   display: flex;
   flex-direction: column;
-  padding: 120px 0;
   gap: 24px;
+  padding: 120px 24px;
 }
 
 #skillBlock {
@@ -417,7 +501,7 @@ form {
 }
 
 #formContainer {
-  padding: 0 24px 120px;
+  padding: 120px 24px;
   gap: 58px;
 }
 
