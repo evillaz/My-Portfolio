@@ -105,10 +105,11 @@ ul {
   #headline {
     flex-direction: row;
     gap: 87px;
-    padding: 0 731px 59 36px;
+    padding: 0 50% 59px 36px;
     background-image: url("../icons/desktopBackgroundHeader.svg");
     background-repeat: no-repeat;
     background-position: right;
+    background-size: 50%;
   }
 
   #headlineText {
@@ -127,6 +128,10 @@ ul {
     align-self: center;
   }
 
+  #multi-post {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 
 h1 {
@@ -186,7 +191,9 @@ p {
     padding: 120px 24px;
     background-image: url("../icons/Illustration.svg");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom -20% right;
+    background-size: auto;
+    background-origin: border-box
   }
 
   #headlineText {
@@ -256,18 +263,18 @@ h2 {
 
 .placeholder {
   background-image: url("../icons/ImgPlaceholder.svg");
+  background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   margin: 0;
-  padding-bottom: 72%;
+  padding: 36% 24px;
   height: 0;
 }
 
 #multi-postBlock {
   gap: 12px;
   padding-top: 24px;
-  align-items: flex-start;
   flex: 1;
 }
 
@@ -342,12 +349,9 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 76px 16px 0;
+  padding: 76px 16px 22px;
   align-items: flex-start;
   flex: 1;
-}
-
-#cardWork {
   background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../icons/cardBackground.svg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -378,10 +382,6 @@ button {
 
 #cardTags .tagText {
   color: #fff;
-}
-
-#cardButton {
-  padding-top: 22px;
 }
 
 #cardWork button {
