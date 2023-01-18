@@ -413,15 +413,12 @@ h4 {
 
 form {
   margin: 0;
+  gap: 24px;
 }
 
 #formContainer {
   padding: 0 24px 120px;
   gap: 58px;
-}
-
-#formContainer li {
-  width: 100%;
 }
 
 #contactDescription {
@@ -432,10 +429,6 @@ form {
   line-height: 138%;
   text-align: center;
   color: #172b4d;
-}
-
-form {
-  gap: 24px;
 }
 
 form *::placeholder {
