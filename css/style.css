@@ -759,3 +759,11 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.formElement:hover {
+  transform: translate(10px, 10px);
+}
+
+img:hover {
+  transform: scale(1.2);
+}
