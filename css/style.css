@@ -157,7 +157,7 @@ ul {
   }
 
   .placeholder {
-    background-image: url("../icons/ImgPlaceholder2.svg"); 
+    background-image: url("../icons/ImgPlaceholder2.svg");
     padding-bottom: 42%;
     width: 100%;
   }
@@ -169,20 +169,17 @@ ul {
   #recent-works {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr;
-  }
-
-  #recent-works {
     margin: 0;
     padding: 130px 141px;
     gap: 37px 24px;
   }
 
-  #cardDesc {   
+  #cardDesc {
     font-size: 17px;
     line-height: 141%;
   }
 
-  #cardWork { 
+  #cardWork {
     display: none;
   }
 
@@ -284,7 +281,6 @@ ul {
   #skillFeatures {
     align-items: right;
   }
-  
 }
 
 h1 {
