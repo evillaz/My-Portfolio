@@ -131,6 +131,11 @@ ul {
   #multi-post {
     flex-direction: row;
     gap: 24px;
+    padding: 0;
+    grid-column: 1/4;
+    grid-row: 2;
+    align-self: flex-start;
+    padding-top: 77px;
   }
 
   #title {
@@ -150,47 +155,49 @@ ul {
     background-size: 100%;
     background-origin: content-box;
   }
+
   .placeholder {
     background-image: url("../icons/ImgPlaceholder2.svg"); 
     padding-bottom: 42%;
     width: 100%;
   }
+
   #multi-postBlock {
     padding: 0;
   }
-  #multi-post {
-    padding: 0;
-    grid-column: 1/4;
-    grid-row: 2;
-    align-self: flex-start;
-    padding-top: 77px;
-  }
+
   #recent-works {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr;
   }
+
   #recent-works {
     margin: 0;
     padding: 130px 141px;
     gap: 37px 24px;
   }
+
   #cardDesc {   
     font-size: 17px;
     line-height: 141%;
   }
+
   #cardWork { 
     display: none;
-  } 
+  }
+
   #deskCardWork {
     align-items: flex-start;
     justify-content: flex-end;
   }
+
   #deskCardWork1 {
     justify-content: flex-end;
     background-image: url("../icons/deskCardWork1.svg");
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   #cardElements1 {
     background-image: url("../icons/deskCardWork2.svg");
     background-size: cover;
@@ -201,6 +208,7 @@ ul {
     flex: 1;
     justify-content: flex-end;
   }
+
   #cardElements2 {
     background-image: url("../icons/deskCardWork3.svg");
     background-size: cover;
@@ -210,6 +218,7 @@ ul {
     padding: 221px 16px 16px;
     flex: 1;
   }
+
   #cardElements3 {
     background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url("../icons/deskCardWork1.svg");
     background-size: cover;
@@ -220,10 +229,12 @@ ul {
     flex: 1;
     justify-content: flex-end;
   }
+
   #aboutMe {
     padding: 130px 0;
     width: 45%;
   }
+
   #amHolder {
     padding: 0 142px;
     background: url("../icons/deskAmBackGround.svg") right no-repeat, url("../icons/amVector.svg") bottom no-repeat;
@@ -231,16 +242,20 @@ ul {
     background-size: 50%, 100%;
     background-origin: border-box, content-box;
   }
+
   #amPlaceHolder {
     padding-top: 9px;
   }
+
   #amTitle {
     line-height: 113%;
   }
+
   #amDesc {
     font-size: 20px;
     line-height: 160%;
   }
+
   #skills {
     flex-direction: row;
     align-items: baseline;
@@ -248,23 +263,28 @@ ul {
     gap: 152px;
     padding: 130px 142px;
   }
+
   #formContainer {
     flex-direction: row;
     gap: 24px;
     padding: 130px 142px 154px 135px;
     align-items: rigth;
   }
+
   #contactDescription {
     width: 31.6%;
     font-size: 40px;
     line-height: 130%;
   }
+
   form {
     width: 68.4%;
   }
+
   #skillFeatures {
     align-items: right;
   }
+  
 }
 
 h1 {
