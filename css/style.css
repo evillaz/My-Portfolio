@@ -132,6 +132,80 @@ ul {
     flex-direction: row;
     gap: 24px;
   }
+
+  #title {
+    flex-direction: row;
+    gap: 24px;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-self: flex-start;
+  }
+
+  #workPlaceholder {
+    flex-grow: 1;
+    margin-right: auto;
+    background-image: url("../icons/Vectortitle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-origin: content-box;
+  }
+  
+  .placeholder {
+    background-image: url("../icons/ImgPlaceholder2.svg"); 
+    padding-bottom: 42%;
+    width: 100%;
+  }
+  
+  #multi-postBlock {
+    padding: 0;
+  }
+
+  #multi-post{
+    padding: 0;
+    grid-column: 1/4;
+    grid-row: 2;
+    align-self: flex-start;
+    padding-top: 77px;
+  }
+
+  #recent-works {
+    grid-template-areas: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr;
+  }
+
+  #recent-works {
+    margin: 0;
+    padding: 130px 141px;
+    gap: 37px 24px;
+  }
+  
+  #cardDesc {   
+    font-size: 17px;
+    line-height: 141%;
+  }
+
+  #cardWork { 
+    display: none;
+  }
+  
+  #deskCardWork{
+    align-items: flex-start;
+    flex: 1;
+  }
+
+  #cardElements1 {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../icons/deskCardWork2.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    gap: 24px;
+    padding: 178px 16px 16px;
+  }
+
+  #cardElements1 *{
+    visibility: hidden;
+  }
+
 }
 
 h1 {
@@ -209,6 +283,48 @@ p {
     flex-direction: row;
     order: 1;
   }
+
+  #workPlaceholder {
+    padding: 24px;
+    background-image: url("../icons/Vectortitle.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+  .placeholder {
+    background-image: url("../icons/ImgPlaceholder1.svg");
+    padding-top: 72.47%;
+    width: 100%;
+  }
+
+  #multi-postBlock {
+    padding-top: 24px;
+  }
+
+  #multi-post {
+    margin: 0;
+    padding-top: 56px;
+  }
+
+  #recent-works {
+    margin: 0;
+    padding: 120px 24px;
+    gap: 24px;
+  }
+
+  #cardElements { 
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../icons/cardBackground.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    gap: 12px;
+    padding: 76px 16px 22px;
+  }
+
+  #cardDesc {   
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 #social-media {
@@ -220,19 +336,14 @@ a img {
   color: #dbd8d7;
 }
 
-
-
 #recent-works {
   display: grid;
-  margin: 0;
-  padding: 120px 24px;
-  gap: 24px;
 }
 
 #title {
   justify-content: center;
-  flex: 1;
   margin: 0;
+  flex: 1;
 }
 
 h2 {
@@ -247,35 +358,17 @@ h2 {
   font-size: 40px;
   line-height: 131%;
   text-align: center;
-  background-image: url("../icons/Vectortitle.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-origin: content-box;
-}
-
-#multi-post {
-  align-items: flex-start;
-  flex: 0;
-  margin: 0;
-  padding-top: 56px;
 }
 
 .placeholder {
-  background-image: url("../icons/ImgPlaceholder.svg");
-  background-position: top;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  width: 100%;
-  margin: 0;
-  padding: 36% 24px;
-  height: 0;
+  background-origin: border-box;
 }
 
 #multi-postBlock {
   gap: 12px;
-  padding-top: 24px;
-  flex: 1;
+  flex: 50%;
 }
 
 #titlePost {
@@ -284,7 +377,6 @@ h2 {
   font-weight: 400;
   font-size: 32px;
   line-height: 138%;
-  flex-grow: 1;
 }
 
 #mpSupportText {
@@ -348,14 +440,10 @@ button {
 #cardElements {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 76px 16px 22px;
   align-items: flex-start;
   flex: 1;
-  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../icons/cardBackground.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
+
 
 #cardTitle {
   font-family: 'Crete Round', sans-serif;
@@ -370,8 +458,6 @@ button {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
   color: #fff;
 }
 
@@ -384,7 +470,7 @@ button {
   color: #fff;
 }
 
-#cardWork button {
+#cardButton *{
   width: 100%;
 }
 
