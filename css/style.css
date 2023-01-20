@@ -722,13 +722,13 @@ h4 {
 .formElement:hover::placeholder {
   color: #3c3a39;
   font-weight: bold;
-  transform: translate(10px, 10px);
 }
+
 #submitForm {
   width: fit-content;
 }
 
-footer{
+footer {
   border-top: 1px solid #dfe1e6;
 }
 
