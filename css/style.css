@@ -84,6 +84,132 @@ ul {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+  #headline {
+    gap: 12px;
+    padding: 120px 24px;
+    background-image: url("../icons/Illustration.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -20% right;
+    background-size: auto;
+    background-origin: border-box;
+  }
+
+  #headlineText {
+    order: 0;
+  }
+
+  #primary-text {
+    font-size: 56px;
+    line-height: 114%;
+  }
+
+  #social-media {
+    flex-direction: row;
+    order: 1;
+  }
+
+  #workPlaceholder {
+    padding: 24px;
+    background-image: url("../icons/Vectortitle.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+  .placeholder {
+    background-image: url("../icons/ImgPlaceholder1.svg");
+    padding-top: 72.47%;
+    width: 100%;
+  }
+
+  #multi-postBlock {
+    padding-top: 24px;
+  }
+
+  #multi-post {
+    margin: 0;
+    padding-top: 56px;
+  }
+
+  #recent-works {
+    margin: 0;
+    padding: 120px 24px;
+    gap: 24px;
+  }
+
+  #cardElements {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../icons/cardBackground.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    gap: 12px;
+    padding: 76px 16px 22px;
+  }
+
+  #cardDesc {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  #deskCardWork,
+  #deskCardWork1 {
+    display: none;
+  }
+
+  #aboutMe {
+    padding: 120px 0;
+  }
+
+  #amHolder {
+    padding: 0 24px;
+    background: url("../icons/amBackground.svg") right bottom no-repeat, url("../icons/amVector.svg") bottom no-repeat;
+    background-repeat: no-repeat;
+    background-size: auto, 100%;
+    background-origin: border-box, content-box;
+  }
+
+  #amPlaceHolder {
+    padding-top: 79.52px;
+  }
+
+  #amTitle {
+    line-height: 122%;
+  }
+
+  #amDesc {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  #skills {
+    gap: 24px;
+    padding: 120px 24px;
+  }
+
+  #formContainer {
+    padding: 120px 24px;
+    gap: 58px;
+  }
+
+  #skillBlock {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #skillFeatures {
+    align-items: center;
+  }
+
+  #contactDescription {
+    font-size: 32px;
+    line-height: 138%;
+  }
+
+  #submitForm {
+    align-self: center;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   #nav-bar {
     padding: 16px 142px;
@@ -335,132 +461,6 @@ p {
   font-size: 16px;
   line-height: 150%;
   color: #fff;
-}
-
-@media only screen and (max-width: 768px) {
-  #headline {
-    gap: 12px;
-    padding: 120px 24px;
-    background-image: url("../icons/Illustration.svg");
-    background-repeat: no-repeat;
-    background-position: bottom -20% right;
-    background-size: auto;
-    background-origin: border-box;
-  }
-
-  #headlineText {
-    order: 0;
-  }
-
-  #primary-text {
-    font-size: 56px;
-    line-height: 114%;
-  }
-
-  #social-media {
-    flex-direction: row;
-    order: 1;
-  }
-
-  #workPlaceholder {
-    padding: 24px;
-    background-image: url("../icons/Vectortitle.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-  }
-
-  .placeholder {
-    background-image: url("../icons/ImgPlaceholder1.svg");
-    padding-top: 72.47%;
-    width: 100%;
-  }
-
-  #multi-postBlock {
-    padding-top: 24px;
-  }
-
-  #multi-post {
-    margin: 0;
-    padding-top: 56px;
-  }
-
-  #recent-works {
-    margin: 0;
-    padding: 120px 24px;
-    gap: 24px;
-  }
-
-  #cardElements {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../icons/cardBackground.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    gap: 12px;
-    padding: 76px 16px 22px;
-  }
-
-  #cardDesc {
-    font-size: 16px;
-    line-height: 150%;
-  }
-
-  #deskCardWork,
-  #deskCardWork1 {
-    display: none;
-  }
-
-  #aboutMe {
-    padding: 120px 0;
-  }
-
-  #amHolder {
-    padding: 0 24px;
-    background: url("../icons/amBackground.svg") right bottom no-repeat, url("../icons/amVector.svg") bottom no-repeat;
-    background-repeat: no-repeat;
-    background-size: auto, 100%;
-    background-origin: border-box, content-box;
-  }
-
-  #amPlaceHolder {
-    padding-top: 79.52px;
-  }
-
-  #amTitle {
-    line-height: 122%;
-  }
-
-  #amDesc {
-    font-size: 16px;
-    line-height: 150%;
-  }
-
-  #skills {
-    gap: 24px;
-    padding: 120px 24px;
-  }
-
-  #formContainer {
-    padding: 120px 24px;
-    gap: 58px;
-  }
-
-  #skillBlock {
-    align-items: center;
-    justify-content: center;
-  }
-
-  #skillFeatures {
-    align-items: center;
-  }
-
-  #contactDescription {
-    font-size: 32px;
-    line-height: 138%;
-  }
-
-  #submitForm {
-    align-self: center;
-  }
 }
 
 #social-media {
