@@ -209,14 +209,13 @@ ul {
   #submitForm {
     align-self: center;
   }
-  
+
   .footerPlaceHolder {
     padding-bottom: 8px;
     background-image: url("../icons/footerShape.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -423,7 +422,6 @@ ul {
   #submitForm {
     align-self: flex-start;
   }
-
 }
 
 h1 {
@@ -754,6 +752,6 @@ h4 {
   padding: 15px;
 }
 
-#footer-container{
+#footer-container {
   flex: 1;
 }
