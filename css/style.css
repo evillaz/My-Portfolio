@@ -280,7 +280,6 @@ ul {
   #skillFeatures {
     align-items: right;
   }
-
 }
 
 h1 {
@@ -441,10 +440,6 @@ p {
     gap: 58px;
   }
 
-  #submitForm {
-    align-self: flex-start;
-  }
-
   #skillBlock {
     align-items: center;
     justify-content: center;
@@ -462,7 +457,6 @@ p {
   #submitForm {
     align-self: center;
   }
-
 }
 
 #social-media {
@@ -733,14 +727,6 @@ h4 {
   width: fit-content;
 }
 
-#footer-media {
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-  padding: 15px 0;
-  border-top: 1px solid #dfe1e6;
-}
-
 .footerPlaceHolder {
   padding: 0 120px 8px;
   background-image: url("../icons/footerShape.svg");
@@ -750,4 +736,12 @@ h4 {
 
 .image:hover {
   transform: scale(1.2);
+}
+
+#footer-media {
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  border-top: 1px solid #dfe1e6;
 }
