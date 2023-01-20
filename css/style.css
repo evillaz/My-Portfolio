@@ -393,15 +393,19 @@ ul {
     flex-direction: row;
     gap: 24px;
     padding: 130px 142px 154px 135px;
+    align-items: center;
   }
 
   #contactDescription {
     font-size: 40px;
     line-height: 130%;
+    align-self: center;
+    flex-grow: 1;
+    flex-basis: 0;
   }
 
   #contactForm {
-    flex: 1;
+    flex-grow: 1;
   }
 
   #skillFeatures {
