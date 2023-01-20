@@ -274,7 +274,7 @@ ul {
     line-height: 130%;
   }
 
-  form {
+  #contactForm {
     width: 68.4%;
   }
 
@@ -401,7 +401,8 @@ p {
     line-height: 150%;
   }
 
-  #deskCardWork,#deskCardWork1 {
+  #deskCardWork,
+  #deskCardWork1 {
     display: none;
   }
 
@@ -685,7 +686,7 @@ h4 {
   content: url("../icons/skillsIcon.svg");
 }
 
-form {
+#contactForm {
   margin: 0;
   gap: 24px;
 }
@@ -697,7 +698,7 @@ form {
   color: #172b4d;
 }
 
-form *::placeholder {
+#contactForm *::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -707,17 +708,16 @@ form *::placeholder {
 
 #contactForm * {
   width: 100%;
-  background-color: #fff;
   margin: 0;
   border: 0;
   padding: 15px 16px;
 }
 
-form input {
+#contactForm input {
   border-bottom: 1px solid #dbd8d7;
 }
 
-form textarea {
+#contactForm textarea {
   background-color: #fbf8f7;
   padding: 12px;
   height: 114px;
