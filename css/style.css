@@ -341,6 +341,7 @@ ul {
     gap: 24px;
     padding: 221px 16px 16px;
     flex: 1;
+    justify-content: flex-end;
   }
 
   #cardElements3 {
@@ -395,13 +396,12 @@ ul {
   }
 
   #contactDescription {
-    width: 31.6%;
     font-size: 40px;
     line-height: 130%;
   }
 
   #contactForm {
-    width: 68.4%;
+    flex:1;
   }
 
   #skillFeatures {
@@ -730,7 +730,7 @@ h4 {
 }
 
 .footerPlaceHolder {
-  padding: 0 120px 8px;
+  padding-bottom: 8px;
   background-image: url("../icons/footerShape.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -744,6 +744,6 @@ h4 {
   flex-direction: row;
   justify-content: center;
   gap: 20px;
-  padding: 15px 0;
   border-top: 1px solid #dfe1e6;
+  padding: 15px;
 }
