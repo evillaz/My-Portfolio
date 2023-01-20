@@ -203,6 +203,7 @@ ul {
   #contactDescription {
     font-size: 32px;
     line-height: 138%;
+    text-align: center;
   }
 
   #submitForm {
@@ -406,10 +407,10 @@ ul {
   #skillFeatures {
     align-items: right;
   }
-}
 
-#submitForm {
-  width: fit-content;
+  #submitForm {
+    align-self: flex-start;
+  }
 }
 
 h1 {
