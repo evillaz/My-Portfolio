@@ -647,10 +647,6 @@ button {
   gap: 24px;
 }
 
-.skillImg {
-  flex-grow: 0;
-}
-
 #skillTxt {
   font-family: 'InaiMathi', sans-serif;
   font-style: normal;
@@ -729,11 +725,12 @@ h4 {
   transform: translate(10px, 10px);
 }
 
+
 #submitForm {
   width: fit-content;
 }
 
-footer {
+footer  {
   border-top: 1px solid #dfe1e6;
 }
 
@@ -751,6 +748,6 @@ footer {
   background-position: center;
 }
 
-img:hover {
+.image:hover {
   transform: scale(1.2);
 }
