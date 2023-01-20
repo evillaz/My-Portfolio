@@ -216,7 +216,7 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
   }
-  
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -752,4 +752,8 @@ h4 {
   gap: 20px;
   border-top: 1px solid #dfe1e6;
   padding: 15px;
+}
+
+#footer-container{
+  flex: 1;
 }
