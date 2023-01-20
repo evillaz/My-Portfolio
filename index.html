@@ -18,68 +18,67 @@
               <div id="logo-placeholder">
                 <a href="index.html">Eduardo Villarreal</a>
               </div>
-              <div id="normal-button">
-                <img id="menu-button" src="icons/Icon - Menu.svg" alt="menu-button"/>
-              </div>
+              <img class="image" id="menu-button" src="icons/Icon - Menu.svg" alt="menu-button"/>
+              <ul class="flex-container" id="deskNavBar">
+                <li>
+                  <a href="#recent-works" id="portfolioRef">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#aboutMyself" id="aboutRef">About</a>
+                </li>
+                <li>
+                  <a href="#formContainer" id="contactRef">Contact</a>
+                </li>
+                <a id="mailRef"><img class="image" src="icons/deskMailIcon.svg" alt="mail"/></a>
+              </ul>
             </nav>
           </div>
         </header>  
-        <ul class="flex-container" id="headline">
-            <li>
-              <h1 id="primary-text">Hey There.<br> I'm Eduardo</h1>
-            </li>
-            <li>
-              <h3 id="supporting-text">I'am a Software Developer</h3>
-            </li>
-            <li>
-              <p id="description">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
-            </li>
-            <li>
-              <ul class="flex-container" id="social-media">
-                <li>
-                  <a href="https://github.com/evillaz">            
-                    <img id="gitHubtIcon" src="icons/gitHub1.svg" alt="GitHub" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/eduardo-villarreal-144a8925a/">
-                    <img id="linkedInIcon" src="icons/linkedIn1.svg" alt="LinkedIn" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://angel.co/u/eduardo-villarreal-3">
-                    <img id="angeListIcon" src="icons/angeList1.svg" alt="AngelList" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/evillazz">
-                    <img id="twitterIcon" src="icons/twitter1.svg" alt="Twitter" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://medium.com/@evillaz123">
-                    <img id="mediumIcon" src="icons/medium1.svg" alt="Medium" />
-                  </a>
-                </li>
-              </ul>
-            </li>
+      </section>
+      <section class="flex-container" id="headline">
+        <div class="flex-container" id="headlineText">
+          <h1 id="primary-text">Hey There.<br> I'm Eduardo</h1>
+          <h3 id="supporting-text">I'm a Software Developer</h3>
+          <p id="description">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+        </div>
+        <ul class="flex-container" id="social-media">
+          <li>
+            <a href="https://github.com/evillaz">            
+              <img class="image" id="gitHubtIcon" src="icons/gitHub1.svg" alt="GitHub" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/eduardo-villarreal-144a8925a/">
+              <img class="image" id="linkedInIcon" src="icons/linkedIn1.svg" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://angel.co/u/eduardo-villarreal-3">
+              <img class="image" id="angeListIcon" src="icons/angeList1.svg" alt="AngelList" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/evillazz">
+              <img class="image" id="twitterIcon" src="icons/twitter1.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@evillaz123">
+              <img class="image" id="mediumIcon" src="icons/medium1.svg" alt="Medium" />
+            </a>
+          </li>
         </ul>
       </section>
       <section class="grid-container" id="recent-works">
         <div class="flex-container" id="title">
           <h2>My Recent works</h2>
+          <div id="workPlaceholder"></div>
         </div>
         <div class="flex-container" id="multi-post">
-          <div class="placeholder" id="img-placeholder">
-          </div>
-          <ul class="flex-container" id="multi-postBlock">
-            <li>
-              <h3 id="titlePost">Multi-Post Stories</h3>
-            </li>
-            <li>
+          <div class="placeholder"></div>
+          <div class="flex-container" id="multi-postBlock">
+            <h3 id="titlePost">Multi-Post Stories</h3>
               <p id="mpSupportText">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            </li>
-            <li class="flex-container" id="mpTags">
               <ul class="flex-container" id="tagGroup">
                 <li class="tag">
                   <a class="tagText" id="css">css</a>
@@ -94,13 +93,13 @@
                   <a class="tagText" id="Ruby">Ruby</a>
                 </li>
               </ul>
-            </li>
-            <li>
+            <div>
               <button class="button" type="button">
                 <span id="buttonText">See Project</span>
               </button>
-            </li>
+            </div>
           </ul>
+        </div>
         </div>
         <div class="flex-container" id="cardWork">
           <ul class="flex-container" id="cardElements">
@@ -264,31 +263,156 @@
             </button>
           </div>
         </div>
+
+        <div class="flex-container" id="deskCardWork1">
+          <button class="button" type="button">
+            <span id="buttonText">See Project</span>
+          </button>
+        </div>
+
+        <div class="flex-container" id="deskCardWork">
+          <ul class="flex-container" id="cardElements1">
+            <li>
+              <h3 id="cardTitle">Data Dashboard Health Care</h3>
+            </li>
+            <li>
+              <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+            </li>
+            <li class="flex-container" id="cardTags">
+              <ul class="flex-container" id="tagGroup">
+                <li class="tag">
+                  <a class="tagText" id="html">html</a>
+                </li>
+                <li class="tag">
+                  <a class="tagText" id="bootstrap">bootstrap</a>
+                </li>
+                <li class="tag">
+                  <a class="tagText" id="Ruby">Ruby</a>
+                </li>
+              </ul>
+          </ul>
+        </div>
+
+        <div class="flex-container" id="deskCardWork">
+          <ul class="flex-container" id="cardElements2">
+            <li>
+              <h3 id="cardTitle">Website Portfolio</h3>
+            </li>
+            <li>
+              <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+            </li>
+            <li class="flex-container" id="cardTags">
+              <ul class="flex-container" id="tagGroup">
+                <li class="tag">
+                  <a class="tagText" id="html">html</a>
+                </li>
+                <li class="tag">
+                  <a class="tagText" id="bootstrap">bootstrap</a>
+                </li>
+                <li class="tag">
+                  <a class="tagText" id="Ruby">Ruby</a>
+                </li>
+              </ul>
+          </ul>
+        </div>
+        
+        <div class="flex-container" id="deskCardWork">
+          <ul class="flex-container" id="cardElements3">
+            <li>
+              <h3 id="cardTitle">Profesional Art Printing Data More</h3>
+            </li>
+            <li>
+              <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+            </li>
+            <li class="flex-container" id="cardTags">
+              <ul class="flex-container" id="tagGroup">
+                <li class="tag">
+                  <a class="tagText" id="html">html</a>
+                </li>
+                <li class="tag">
+                  <a class="tagText" id="bootstrap">bootstrap</a>
+                </li>
+                <li class="tag">
+                  <a class="tagText" id="Ruby">Ruby</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="flex-container" id="deskCardWork">
+          <ul class="flex-container" id="cardElements1">
+            <li>
+              <h3 id="cardTitle">Data Dashboard Health Care</h3>
+            </li>
+            <li>
+              <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+            </li>
+            <li class="flex-container" id="cardTags">
+              <ul class="flex-container" id="tagGroup">
+                <li class="tag">
+                  <a class="tagText" id="html">html</a>
+                </li>
+                <li class="tag">
+                  <a class="tagText" id="bootstrap">bootstrap</a>
+                </li>
+                <li class="tag">
+                  <a class="tagText" id="Ruby">Ruby</a>
+                </li>
+              </ul>
+          </ul>
+        </div>
+
+        <div class="flex-container" id="deskCardWork">
+          <ul class="flex-container" id="cardElements2">
+            <li>
+              <h3 id="cardTitle">Website Portfolio</h3>
+            </li>
+            <li>
+              <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+            </li>
+            <li class="flex-container" id="cardTags">
+              <ul class="flex-container" id="tagGroup">
+                <li class="tag">
+                  <a class="tagText" id="html">html</a>
+                </li>
+                <li class="tag">
+                  <a class="tagText" id="bootstrap">bootstrap</a>
+                </li>
+                <li class="tag">
+                  <a class="tagText" id="Ruby">Ruby</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
       </section>
       <section class="flex-container" id="aboutMyself">
-        <ul class="flex-container" id="aboutMe">
-          <li>
-            <h2 id="amTitle">About me</h2>
-          </li>
-          <li>
-            <p id="amDesc">Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-          </li>
-          <li>
-            <button class="button" type="button">
-              <span id="buttonText">Get My Resume</span>
-            </button>
-          </li>
-          <li>
-            <div class="amPlaceHolder"></div>
-          </li>
-        </ul>
+        <div id="amHolder">
+          <ul class="flex-container" id="aboutMe">
+            <li>
+              <h2 id="amTitle">About me</h2>
+            </li>
+            <li>
+              <p id="amDesc">Hello I'm a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+            </li>
+            <li>
+              <button class="button" type="button">
+                <span id="buttonText">Get My Resume</span>
+              </button>
+            </li>          
+          </ul>
+          <div class="amPlaceHolder"></div>
+        </div>
         <ul class="flex-container" id="skills">
           <li class="flex-container" id="skillBlock">
             <div class="flex-container" id="skill">
-              <img class="skillImg" id="lanIcon"/ alt="Language">
+              <img class="image" id="lanIcon"/ alt="Language">
               <h3 id="skillTxt">Language</h3>
             </div>
-            <ul class="flex-containers" id="skillFeatures">
+            <ul class="flex-container" id="skillFeatures">
               <li>
                 <h4 class="featureText">Javascript</h4>
               </li>
@@ -305,10 +429,10 @@
           </li>
           <li class="flex-container" id="skillBlock">
             <div class="flex-container" id="skill">
-              <img class="skillImg" id="frameIcon"/ alt="Frameworks">
+              <img class="image" id="frameIcon"/ alt="Frameworks">
               <h3 id="skillTxt">Frameworks</h3>
             </div>
-            <ul class="flex-containers" id="skillFeatures">
+            <ul class="flex-container" id="skillFeatures">
               <li>
                 <h4 class="featureText">Bootsrap</h4>
               </li>
@@ -328,10 +452,10 @@
           </li>
           <li class="flex-container" id="skillBlock">
             <div class="flex-container" id="skill">
-              <img class="skillImg" id="skillIcon"/ alt="Skills">
+              <img class="image" id="skillIcon"/ alt="Skills">
               <h3 id="skillTxt">Skills</h3>
             </div>
-            <ul class="flex-containers" id="skillFeatures">
+            <ul class="flex-container" id="skillFeatures">
               <li>
                 <h4 class="featureText">Codekit</h4>
               </li>
@@ -353,43 +477,43 @@
       </section>
       <section class="flex-container" id="formContainer">
         <p id="contactDescription">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-        <form class="flex-container" action="https://formspree.io/f/xnqyndrw" method="POST">
+        <form class="flex-container" id="contactForm" action="https://formspree.io/f/xnqyndrw" method="POST">
           <input class="formElement" type="text" name="name" placeholder="Full name" maxlength="30" required>
           <input class="formElement" type="email" name="email" placeholder="Email address" required>
           <textarea class="formElement name="message" placeholder="Enter text here" maxlength="500" required></textarea>
           <button class="button" id="submitForm" type="submit">Get in touch</button>
         </form>
       </section>
+      <footer id="footer-container">
+        <ul class="flex-container" id="footer-media">
+          <li>
+            <a href="https://github.com/evillaz">            
+              <img class="image" id="gitHubLogo" src="icons/gitHub2.svg" alt="GitHub"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/eduardo-villarreal-144a8925a/">
+              <img class="image" id="linkedInLogo" src="icons/linkedIn2.svg" alt="LinkedIn"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://angel.co/u/eduardo-villarreal-3">
+              <img class="image" id="angeListLogo" src="icons/angeList2.svg" alt="AngelList" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/evillazz">
+              <img class="image" id="twitterLogo" src="icons/twitter2.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@evillaz123">
+              <img class="image" id="mediumLogo" src="icons/medium2.svg" alt="Medium" />
+            </a>
+          </li>
+        </ul>
+        <div class="footerPlaceHolder"></div>
+      </footer>
     </div>
-    <footer>
-      <ul class="flex-container" id="footer-media">
-        <li>
-          <a href="https://github.com/evillaz">            
-            <img id="gitHubLogo" src="icons/gitHub2.svg" alt="GitHub"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/eduardo-villarreal-144a8925a/">
-            <img id="linkedInLogo" src="icons/linkedIn2.svg" alt="LinkedIn"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://angel.co/u/eduardo-villarreal-3">
-            <img id="angeListLogo" src="icons/angeList2.svg" alt="AngelList" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/evillazz">
-            <img id="twitterLogo" src="icons/twitter2.svg" alt="Twitter" />
-          </a>
-        </li>
-        <li>
-          <a href="https://medium.com/@evillaz123">
-            <img id="mediumLogo" src="icons/medium2.svg" alt="Medium" />
-          </a>
-        </li>
-      </ul>
-      <div class="footerPlaceHolder"></div>
-    </footer>
   </body>
 </html>
