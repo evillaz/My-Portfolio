@@ -383,7 +383,7 @@ ul {
   #skills {
     flex-direction: row;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-between;
     gap: 152px;
     padding: 130px 142px;
   }
@@ -643,6 +643,7 @@ button {
 
 #skillBlock {
   gap: 24px;
+  flex: 1;
 }
 
 #skill {
