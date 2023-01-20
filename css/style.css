@@ -335,14 +335,14 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  #headline { 
+  #headline {
     gap: 12px;
     padding: 120px 24px;
     background-image: url("../icons/Illustration.svg");
     background-repeat: no-repeat;
     background-position: bottom -20% right;
     background-size: auto;
-    background-origin: border-box
+    background-origin: border-box;
   }
 
   #headlineText {
@@ -388,7 +388,7 @@ p {
     gap: 24px;
   }
 
-  #cardElements { 
+  #cardElements {
     background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../icons/cardBackground.svg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -396,12 +396,12 @@ p {
     padding: 76px 16px 22px;
   }
 
-  #cardDesc {   
+  #cardDesc {
     font-size: 16px;
     line-height: 150%;
   }
 
-  #deskCardWork, #deskCardWork1 {
+  #deskCardWork,#deskCardWork1 {
     display: none;
   }
 
@@ -409,7 +409,7 @@ p {
     padding: 120px 0;
   }
 
-  #amHolder{
+  #amHolder {
     padding: 0 24px;
     background: url("../icons/amBackground.svg") right bottom no-repeat, url("../icons/amVector.svg") bottom no-repeat;
     background-repeat: no-repeat;
@@ -448,7 +448,7 @@ p {
     align-items: center;
     justify-content: center;
   }
-  
+
   #skillFeatures {
     align-items: center;
   }
@@ -576,7 +576,6 @@ button {
   flex: 1;
 }
 
-
 #cardTitle {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -602,7 +601,7 @@ button {
   color: #fff;
 }
 
-#cardButton *{
+#cardButton * {
   width: 100%;
 }
 
@@ -660,7 +659,6 @@ button {
   color: #fff;
 }
 
-
 h4 {
   margin: 0;
   padding: 0;
@@ -707,7 +705,7 @@ form *::placeholder {
   line-height: 160%;
 }
 
-form * {
+#contactForm * {
   width: 100%;
   background-color: #fff;
   margin: 0;
