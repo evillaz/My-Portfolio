@@ -719,11 +719,6 @@ h4 {
   height: 114px;
 }
 
-.formElement:hover::placeholder {
-  color: #3c3a39;
-  font-weight: bold;
-}
-
 #submitForm {
   width: fit-content;
 }
