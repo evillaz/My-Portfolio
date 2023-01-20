@@ -209,6 +209,14 @@ ul {
   #submitForm {
     align-self: center;
   }
+  
+  .footerPlaceHolder {
+    padding-bottom: 8px;
+    background-image: url("../icons/footerShape.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -415,6 +423,7 @@ ul {
   #submitForm {
     align-self: flex-start;
   }
+
 }
 
 h1 {
@@ -731,13 +740,6 @@ h4 {
   color: #3c3a39;
   font-weight: bold;
   transform: translate(10px, 10px);
-}
-
-.footerPlaceHolder {
-  padding-bottom: 8px;
-  background-image: url("../icons/footerShape.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .image:hover {
