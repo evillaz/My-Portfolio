@@ -281,6 +281,11 @@ ul {
   #skillFeatures {
     align-items: right;
   }
+
+  #submitForm {
+    align-self: center;
+    width: fit-content;
+  }
 }
 
 h1 {
@@ -443,6 +448,7 @@ p {
 
   #submitForm {
     align-self: center;
+    width: fit-content;
   }
 
   #skillBlock {
@@ -719,12 +725,10 @@ h4 {
   height: 114px;
 }
 
-#submitForm {
-  width: fit-content;
-}
-
-footer {
-  border-top: 1px solid #dfe1e6;
+.formElement:hover::placeholder {
+  color: #3c3a39;
+  font-weight: bold;
+  transform: translate(10px, 10px);
 }
 
 #footer-media {
@@ -732,6 +736,7 @@ footer {
   justify-content: center;
   gap: 20px;
   padding: 15px 0;
+  border-top: 1px solid #dfe1e6;
 }
 
 .footerPlaceHolder {
