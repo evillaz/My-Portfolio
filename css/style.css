@@ -406,10 +406,10 @@ ul {
   #skillFeatures {
     align-items: right;
   }
+}
 
-  #submitForm {
-    align-self: flex-start;
-  }
+#submitForm {
+  width: fit-content;
 }
 
 h1 {
