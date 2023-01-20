@@ -461,13 +461,6 @@ form textarea {
   color: #3c3a39;
   font-weight: bold;
 }
-.formElement:hover {
-  transform: translate(10px, 10px);
-}
-
-img:hover{
-  transform: scale(1.2);
-}
 
 #submitForm {
   width: fit-content;
