@@ -280,6 +280,10 @@ ul {
   #skillFeatures {
     align-items: right;
   }
+
+  #submitForm {
+    width: fit-content;
+  }
 }
 
 h1 {
@@ -456,6 +460,7 @@ p {
 
   #submitForm {
     align-self: center;
+    width: fit-content;
   }
 }
 
@@ -721,10 +726,6 @@ h4 {
   color: #3c3a39;
   font-weight: bold;
   transform: translate(10px, 10px);
-}
-
-#submitForm {
-  width: fit-content;
 }
 
 .footerPlaceHolder {
