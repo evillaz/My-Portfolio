@@ -152,9 +152,9 @@ And it should show no changes
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using the following link:
 
-Visual studio code, another realiable code editor or a Web browser
+https://evillaz.github.io/my-portfolio/
 <!--
 Example:
 
