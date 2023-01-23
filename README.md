@@ -153,6 +153,8 @@ And it should show no changes
 ### Deployment
 
 You can deploy this project using the following link:
+
+https://evillaz.github.io/my-portfolio/
 <!--
 Example:
 
