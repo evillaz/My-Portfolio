@@ -82,7 +82,9 @@ This is one of the first projects on the early days on microverse program.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Soon](https://yourdeployedapplicationlink.com)
+We got our first live demo thanks to GitHub pages hosting>>>>
+
+- [Live Demo!!!](https://evillaz.github.io/My-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
