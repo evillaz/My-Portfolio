@@ -3,6 +3,10 @@
   src: url("../fonts/InaiMathi.woff") format('woff');
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -34,11 +38,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   border-radius: 0;
-  padding: 0 24px;
+  padding: 0 2.4rem;
 }
 
 #logo-placeholder {
-  padding: 12px 0;
+  padding: 1.2rem 0;
 }
 
 #logo-placeholder a {
@@ -47,7 +51,7 @@ nav {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 133%;
   color: #fff;
   order: 0;
@@ -55,7 +59,7 @@ nav {
 }
 
 #menu-button {
-  padding: 12px 8px;
+  padding: 1.2rem 0.8rem;
 }
 
 ul {
@@ -68,8 +72,8 @@ ul {
 #deskNavBar {
   flex-direction: row;
   align-items: center;
-  padding: 8px;
-  margin: 4px 0;
+  padding: 0.8rem;
+  margin: 0.4rem 0;
   display: none;
 }
 
@@ -77,17 +81,17 @@ ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 133%;
-  padding: 10px 12px;
+  padding: 1rem 1.2rem;
   color: #fff;
   text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
   #headline {
-    gap: 12px;
-    padding: 120px 24px;
+    gap: 1.2rem;
+    padding: 12rem 2.4rem;
     background-image: url("../icons/Illustration.svg");
     background-repeat: no-repeat;
     background-position: bottom -20% right;
@@ -100,8 +104,18 @@ ul {
   }
 
   #primary-text {
-    font-size: 56px;
+    font-size: 5.6rem;
     line-height: 114%;
+  }
+
+  #supporting-text {
+    font-size: 2.4rem;
+    line-height: 133%;
+  }
+
+  #description {
+    font-size: 1.6rem;
+    line-height: 150%;
   }
 
   #social-media {
@@ -110,7 +124,7 @@ ul {
   }
 
   #workPlaceholder {
-    padding: 24px;
+    padding: 2.4rem;
     background-image: url("../icons/Vectortitle.svg");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -124,30 +138,34 @@ ul {
   }
 
   #multi-postBlock {
-    padding-top: 24px;
+    padding-top: 2.4rem;
   }
 
   #multi-post {
     margin: 0;
-    padding-top: 56px;
+    padding-top: 5.6rem;
+  }
+
+  #tagGroup{
+    padding-right: 3.1rem;
   }
 
   #recent-works {
     margin: 0;
-    padding: 120px 24px;
-    gap: 24px;
+    padding: 12rem 2.4rem;
+    gap: 2.4rem;
   }
 
   #cardElements {
     background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../icons/cardBackground.svg");
     background-size: 100%;
     background-repeat: no-repeat;
-    gap: 12px;
-    padding: 76px 16px 22px;
+    gap: 1.2rem;
+    padding: 7.6rem 1.6rem 2.2rem;
   }
 
   #cardDesc {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 150%;
   }
 
@@ -157,11 +175,11 @@ ul {
   }
 
   #aboutMe {
-    padding: 120px 0;
+    padding: 12rem 0;
   }
 
   #amHolder {
-    padding: 0 24px;
+    padding: 0 2.4rem;
     background: url("../icons/amBackground.svg") right bottom no-repeat, url("../icons/amVector.svg") bottom no-repeat;
     background-repeat: no-repeat;
     background-size: auto, 100%;
@@ -169,7 +187,7 @@ ul {
   }
 
   #amPlaceHolder {
-    padding-top: 79.52px;
+    padding-top: 7.95rem;
   }
 
   #amTitle {
@@ -177,18 +195,18 @@ ul {
   }
 
   #amDesc {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 150%;
   }
 
   #skills {
-    gap: 24px;
-    padding: 120px 24px;
+    gap: 2.4rem;
+    padding: 12rem 2.4rem;
   }
 
   #formContainer {
-    padding: 120px 24px;
-    gap: 58px;
+    padding: 12rem 2.4rem;
+    gap: 5.8rem;
   }
 
   #skillBlock {
@@ -201,7 +219,7 @@ ul {
   }
 
   #contactDescription {
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 138%;
     text-align: center;
   }
@@ -211,7 +229,7 @@ ul {
   }
 
   .footerPlaceHolder {
-    padding-bottom: 8px;
+    padding-bottom: 0.8rem;
     background-image: url("../icons/footerShape.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -220,7 +238,7 @@ ul {
 
 @media only screen and (min-width: 768px) {
   #nav-bar {
-    padding: 16px 142px;
+    padding: 1.6rem 14.2rem;
   }
 
   #menu-button {
@@ -232,13 +250,13 @@ ul {
   }
 
   #logo-placeholder a {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 100%;
   }
 
   #headline {
     flex-direction: row;
-    gap: 87px;
+    gap: 8.7rem;
     padding: 0 50% 59px 36px;
     background-image: url("../icons/desktopBackgroundHeader.svg");
     background-repeat: no-repeat;
@@ -248,12 +266,22 @@ ul {
 
   #headlineText {
     order: 1;
-    padding: 192px 0;
+    padding: 19.2rem 0;
   }
 
   #primary-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     line-height: 113%;
+  }
+
+  #supporting-text {
+    font-size: 3.2rem;
+    line-height: 138%;
+  }
+
+  #description {
+    font-size: 2rem;
+    line-height: 160%;
   }
 
   #social-media {
@@ -264,17 +292,17 @@ ul {
 
   #multi-post {
     flex-direction: row;
-    gap: 24px;
+    gap: 2.4rem;
     padding: 0;
     grid-column: 1/4;
     grid-row: 2;
     align-self: flex-start;
-    padding-top: 77px;
+    padding-top: 7.7rem;
   }
 
   #title {
     flex-direction: row;
-    gap: 24px;
+    gap: 2.4rem;
     grid-column: 1/4;
     grid-row: 1/2;
     align-self: flex-start;
@@ -292,7 +320,7 @@ ul {
 
   .placeholder {
     background-image: url("../icons/ImgPlaceholder2.svg");
-    padding-bottom: 42%;
+    padding-bottom: 44.8%;
     width: 100%;
   }
 
@@ -304,12 +332,12 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr;
     margin: 0;
-    padding: 130px 141px;
-    gap: 37px 24px;
+    padding: 13rem 14.1rem;
+    gap: 3.7rem 2.4rem;
   }
 
   #cardDesc {
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 141%;
   }
 
@@ -334,10 +362,12 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: border-box;
-    gap: 24px;
-    padding: 178px 16px 16px;
+    gap: 2.4rem;
+    padding: 17.8rem 1.6rem 1.6rem;
     flex: 1;
     justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   #cardElements2 {
@@ -345,10 +375,12 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: border-box;
-    gap: 24px;
-    padding: 221px 16px 16px;
+    gap: 2.4rem;
+    padding: 22.1rem 1.6rem 1.6rem;
     flex: 1;
     justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   #cardElements3 {
@@ -356,27 +388,29 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: border-box;
-    gap: 24px;
-    padding: 178px 16px 16px;
+    gap: 2.4rem;
+    padding: 17.8rem 1.6rem 1.6rem;
     flex: 1;
     justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   #aboutMe {
-    padding: 130px 0;
+    padding: 13rem 0;
     width: 45%;
   }
 
   #amHolder {
-    padding: 0 142px;
+    padding: 0 14.2rem;
     background: url("../icons/deskAmBackGround.svg") right no-repeat, url("../icons/amVector.svg") bottom no-repeat;
     background-repeat: no-repeat;
-    background-size: 50%, 100%;
+    background-size: auto, 100%;
     background-origin: border-box, content-box;
   }
 
   #amPlaceHolder {
-    padding-top: 9px;
+    padding-top: 0.9rem;
   }
 
   #amTitle {
@@ -384,7 +418,7 @@ ul {
   }
 
   #amDesc {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 160%;
   }
 
@@ -392,19 +426,19 @@ ul {
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    gap: 152px;
-    padding: 130px 142px;
+    gap: 15.2rem;
+    padding: 13rem 14.2rem;
   }
 
   #formContainer {
     flex-direction: row;
-    gap: 24px;
-    padding: 130px 142px 154px 135px;
+    gap: 2.4rem;
+    padding: 13rem 14.2rem 15.4rem 13.5rem;
     align-items: center;
   }
 
   #contactDescription {
-    font-size: 40px;
+    font-size: 4rem;
     line-height: 130%;
     align-self: center;
     flex-grow: 1;
@@ -436,14 +470,14 @@ h1 {
 }
 
 #headlineText {
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 #primary-text {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.37px;
+  letter-spacing: 0.037rem;
   color: #ff6b00;
 }
 
@@ -456,8 +490,6 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 133%;
   color: #fff5e1;
 }
 
@@ -470,8 +502,6 @@ p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
   color: #fff;
 }
 
@@ -503,27 +533,27 @@ h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 131%;
   text-align: center;
 }
 
 .placeholder {
-  background-size: 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
 }
 
 #multi-postBlock {
-  gap: 12px;
-  flex: 50%;
+  gap: 1.2rem;
+  flex-basis: 0;
 }
 
 #titlePost {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 138%;
 }
 
@@ -531,7 +561,7 @@ h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 150%;
   color: #091e42;
 }
@@ -539,20 +569,19 @@ h2 {
 #tagGroup {
   flex-direction: row;
   align-items: flex-start;
-  padding: 0;
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 .tag {
-  padding: 10px 12px;
-  border: 1px solid #8993a4;
+  padding: 1rem 1.2rem;
+  border: 0.1rem solid #8993a4;
 }
 
 .tagText {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 133%;
   color: #091e42;
 }
@@ -564,23 +593,23 @@ h2 {
 .button:hover {
   background: #fff5e1;
   color: #f55800;
-  border: 1px solid #f55800;
+  border: 0.1rem solid #f55800;
 }
 
 .button:active {
   background: #e05304;
   color: #f4f1f0;
-  border: 1px solid #e05304;
+  border: 0.1rem solid #e05304;
 }
 
 button {
-  padding: 12px;
-  border: 1px solid transparent;
+  padding: 1.2rem;
+  border: 0.1rem solid transparent;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 1.7rem;
   line-height: 141%;
   color: #fff;
 }
@@ -596,7 +625,7 @@ button {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 138%;
   color: #fff;
 }
@@ -623,12 +652,12 @@ button {
 
 #aboutMe {
   align-items: flex-start;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 #aboutMyself {
   background: #1c1a19;
-  gap: 8px;
+  gap: 0.8rem;
 }
 
 .amPlaceHolder {
@@ -640,8 +669,8 @@ button {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
-  letter-spacing: 0.37px;
+  font-size: 7.2rem;
+  letter-spacing: 0.037rem;
   color: #ff6b00;
 }
 
@@ -653,21 +682,21 @@ button {
 }
 
 #skillBlock {
-  gap: 24px;
+  gap: 2.4rem;
   flex: 1;
 }
 
 #skill {
   flex-direction: row;
   flex: 1 1;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 #skillTxt {
   font-family: 'InaiMathi', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 138%;
   color: #fff;
 }
@@ -681,7 +710,7 @@ h4 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 194%;
   color: #fff;
 }
@@ -700,7 +729,7 @@ h4 {
 
 #contactForm {
   margin: 0;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 #contactDescription {
@@ -714,30 +743,30 @@ h4 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 160%;
 }
 
 #contactForm * {
   margin: 0;
   border: 0;
-  padding: 15px 16px;
+  padding: 1.5rem 1.6rem;
 }
 
 #contactForm input {
-  border-bottom: 1px solid #dbd8d7;
+  border-bottom: 0.1rem solid #dbd8d7;
 }
 
 #contactForm textarea {
   background-color: #fbf8f7;
-  padding: 12px;
-  height: 114px;
+  padding: 1.2rem;
+  height: 11.4rem;
 }
 
 .formElement:hover::placeholder {
   color: #3c3a39;
   font-weight: bold;
-  transform: translate(10px, 10px);
+  transform: translate(1rem, 1rem);
 }
 
 .image:hover {
@@ -747,9 +776,9 @@ h4 {
 #footer-media {
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
-  border-top: 1px solid #dfe1e6;
-  padding: 15px;
+  gap: 2rem;
+  border-top: 0.1rem solid #dfe1e6;
+  padding: 1.5rem;
 }
 
 #footer-container {
