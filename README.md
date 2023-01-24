@@ -152,16 +152,10 @@ And it should show no changes
 
 ### Deployment
 
-You can deploy this project using the following link:
 
-https://evillaz.github.io/my-portfolio/
-<!--
-Example:
+You can deploy this project using:
 
-```sh
-
-```
- -->
+Visual studio code, another realiable code editor or a Web browser
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
