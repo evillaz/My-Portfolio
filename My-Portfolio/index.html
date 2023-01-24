@@ -472,9 +472,12 @@
       <section class="flex-container" id="formContainer">
         <p id="contactDescription">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
         <form class="flex-container" id="contactForm" action="https://formspree.io/f/xnqyndrw" method="POST">
-          <input class="formElement" type="text" name="name" placeholder="Full name" maxlength="30" required>
-          <input class="formElement" type="email" name="email" placeholder="Email address" required>
-          <textarea class="formElement name="message" placeholder="Enter text here" maxlength="500" required></textarea>
+          <label class="formLabel" for="name">name</label>
+          <input class="formElement" id="name" type="text" name="name" placeholder="Full name" maxlength="30" required>
+          <label class="formLabel" for="email">email</label>          
+          <input class="formElement" id="email" type="email" name="email" placeholder="Email address" required>
+          <label class="formLabel" for="message">message</label>          
+          <textarea class="formElement" id="message" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
           <button class="button" id="submitForm" type="submit">Get in touch</button>
         </form>
       </section>

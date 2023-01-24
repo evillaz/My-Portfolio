@@ -791,6 +791,10 @@ h4 {
   transform: translate(1rem, 1rem);
 }
 
+.formLabel {
+  display: none;
+}
+
 .image:hover {
   transform: scale(1.2);
 }
