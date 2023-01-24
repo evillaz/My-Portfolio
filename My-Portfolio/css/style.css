@@ -185,10 +185,9 @@ ul {
 
   #amHolder {
     padding: 0 2.4rem;
-    background: url("../icons/amBackground.svg") right bottom no-repeat,  bottom no-repeat;
-    background-repeat: no-repeat;
-    background-size: auto, 100%;
-    background-origin: border-box, content-box;
+    background: url("../icons/amBackground.svg") right bottom no-repeat;
+    background-size: auto;
+    background-origin: border-box;
   }
 
   .amPlaceHolder {
@@ -301,7 +300,7 @@ ul {
     align-self: center;
   }
 
-  #recentWorkSection{
+  #recentWorkSection {
     padding: 13rem 14.1rem;
   }
 
@@ -421,7 +420,7 @@ ul {
     gap: 14.6rem;
   }
 
-  .vectorPlaceHolder{
+  .vectorPlaceHolder {
     padding: 0.8rem 14.2rem;
     background-image: url("../icons/amVector.svg");
     background-repeat: no-repeat;
