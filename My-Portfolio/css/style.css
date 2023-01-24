@@ -123,6 +123,12 @@ ul {
     order: 1;
   }
 
+  #recentWorkSection{
+    margin: 0;
+    padding: 12rem 2.4rem;
+    gap: 2.4rem;
+  }
+
   #workPlaceholder {
     padding: 2.4rem;
     background-image: url("../icons/Vectortitle.svg");
@@ -152,7 +158,6 @@ ul {
 
   #recent-works {
     margin: 0;
-    padding: 12rem 2.4rem;
     gap: 2.4rem;
   }
 
@@ -175,19 +180,25 @@ ul {
   }
 
   #aboutMe {
-    padding: 12rem 0;
+    padding: 12rem 0 20rem;
   }
 
   #amHolder {
     padding: 0 2.4rem;
-    background: url("../icons/amBackground.svg") right bottom no-repeat, url("../icons/amVector.svg") bottom no-repeat;
+    background: url("../icons/amBackground.svg") right bottom no-repeat,  bottom no-repeat;
     background-repeat: no-repeat;
     background-size: auto, 100%;
     background-origin: border-box, content-box;
   }
 
-  #amPlaceHolder {
-    padding-top: 7.95rem;
+  .amPlaceHolder {
+    width: auto;
+    padding: 0.8rem 0;
+    background-image: url("../icons/amVector.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
   }
 
   #amTitle {
@@ -290,27 +301,25 @@ ul {
     align-self: center;
   }
 
+  #recentWorkSection{
+    padding: 13rem 14.1rem;
+  }
+
   #multi-post {
     flex-direction: row;
     gap: 2.4rem;
-    padding: 0;
-    grid-column: 1/4;
-    grid-row: 2;
-    align-self: flex-start;
-    padding-top: 7.7rem;
   }
 
   #title {
     flex-direction: row;
     gap: 2.4rem;
-    grid-column: 1/4;
-    grid-row: 1/2;
-    align-self: flex-start;
+    padding: 0 3.55rem 11.4rem;
+    margin-right: auto;
   }
 
   #workPlaceholder {
-    flex-grow: 1;
-    margin-right: auto;
+    width: 100%;
+    flex: 1;
     background-image: url("../icons/Vectortitle.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -320,19 +329,22 @@ ul {
 
   .placeholder {
     background-image: url("../icons/ImgPlaceholder2.svg");
-    padding-bottom: 44.8%;
-    width: 100%;
+    width: 60%;
+    padding-bottom: 39%;
   }
 
   #multi-postBlock {
-    padding: 0;
+    padding-bottom: 10rem;
+    flex-basis: 0;
+    align-items: flex-start;
+    flex-grow: 1;
   }
 
   #recent-works {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.3fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr 1fr;
     margin: 0;
-    padding: 13rem 14.1rem;
+    padding: 2.4rem 0 0;
     gap: 3.7rem 2.4rem;
   }
 
@@ -398,19 +410,34 @@ ul {
 
   #aboutMe {
     padding: 13rem 0;
-    width: 45%;
+    width: fit-content;
+    flex-grow: 1;
   }
 
   #amHolder {
-    padding: 0 14.2rem;
-    background: url("../icons/deskAmBackGround.svg") right no-repeat, url("../icons/amVector.svg") bottom no-repeat;
-    background-repeat: no-repeat;
-    background-size: auto, 100%;
-    background-origin: border-box, content-box;
+    padding-left: 14.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 14.6rem;
   }
 
-  #amPlaceHolder {
-    padding-top: 0.9rem;
+  .vectorPlaceHolder{
+    padding: 0.8rem 14.2rem;
+    background-image: url("../icons/amVector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    background-size: 100%;
+  }
+
+  .amPlaceHolder {
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    background-image: url("../icons/deskAmBackGround.svg");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   #amTitle {
@@ -521,7 +548,6 @@ a img {
 #title {
   justify-content: center;
   margin: 0;
-  flex: 1;
 }
 
 h2 {
@@ -541,12 +567,10 @@ h2 {
 .placeholder {
   background-size: contain;
   background-repeat: no-repeat;
-  background-origin: border-box;
 }
 
 #multi-postBlock {
   gap: 1.2rem;
-  flex-basis: 0;
 }
 
 #titlePost {
@@ -657,12 +681,10 @@ button {
 
 #aboutMyself {
   background: #1c1a19;
-  gap: 0.8rem;
 }
 
 .amPlaceHolder {
   margin: 0;
-  width: max-content;
 }
 
 #amTitle {
