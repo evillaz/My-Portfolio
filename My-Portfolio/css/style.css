@@ -45,7 +45,6 @@ nav {
 }
 
 #logo-placeholder a {
-  border-radius: nullpx;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -510,10 +509,6 @@ ul {
 
   #contactForm {
     flex-grow: 1;
-  }
-
-  #skillFeatures {
-    align-items: right;
   }
 
   #submitForm {
