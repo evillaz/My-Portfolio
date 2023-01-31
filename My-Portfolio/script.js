@@ -12,7 +12,7 @@ const projectInfo = [
   {
     id: 'multiPost',
     name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
     img: {
       src: './icons/SnapshootPortfolio.svg',
       alt: 'Multi-Post Stories snapshot'
@@ -26,7 +26,7 @@ const projectInfo = [
   {
     id: 'card1',
     name: 'Profesional Art Printing Data More',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
     img: {
       src: './icons/SnapshootPortfolio.svg',
       alt: 'Profesional Art Printing snapshot'
@@ -40,7 +40,7 @@ const projectInfo = [
   {
     id: 'card2',
     name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
     img: {
       src: './icons/SnapshootPortfolio.svg',
       alt: 'Profesional Art Printing snapshot'
@@ -54,7 +54,7 @@ const projectInfo = [
   {
     id: 'card3',
     name: 'Website Protfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
     img: {
       src: './icons/SnapshootPortfolio.svg',
       alt: 'Profesional Art Printing snapshot'
@@ -75,7 +75,7 @@ function loadProject() {
       <div class="projectPreview" data-target="${info.id}">
         <div class="projectHeader">
           <h2>${info.name}</h2>
-          <i class="fa fa-close" style="font-size:24px"></i>
+          <i class="fa fa-close" style="font-size:24px; color:#67798e"></i>
         </div>
         <ul class="technologiesPreview">
           <li>
@@ -98,12 +98,16 @@ function loadProject() {
             </div>
             <div class="projectButtons">
               <div>
-                <button href="${info.links.live}">See Live</button>
-                <img src="icons/IconLive.svg" alt="Live" />
+                <button class="button cardButtons" href="${info.links.live}">
+                  <span>See Live</span>
+                  <img src="icons/IconLive.svg" alt="Live" />
+                </button>
               </div>
               <div>
-                <button href="${info.links.live}">See Source</button>
-                <img src="icons/IconSource.svg" alt="Source" />
+                <button class="button cardButtons" href="${info.links.live}">
+                  <span>See Source</span>
+                  <img src="icons/IconSource.svg" alt="Source" />
+                </button>
               </div>
             </div>
           </div>
@@ -118,16 +122,16 @@ loadProject();
 
 const projectContainer = document.querySelector('.project-preview');
 const previewWindow = projectContainer.querySelectorAll('.projectPreview');
+const background = document.querySelector('.bg');
 
 document
   .querySelectorAll('.projectButton')
   .forEach((project) => {
     project.onclick = () => {
-      projectContainer.style.display = 'flex';
-    
-
+      projectContainer.style.display = 'flex',
+      background.style.filter = 'blur(5px)',
+      background.style.overflow = 'hidden';
     const name = project.getAttribute('data-name');
-
     previewWindow.forEach((preview) => {
       const target = preview.getAttribute('data-target');
       if(name === target) {
@@ -136,3 +140,13 @@ document
     });
   };
 });
+
+previewWindow.forEach((close) => {
+  close.querySelector('.fa-close').onclick = () => {
+    close.classList.remove('active');
+    projectContainer.style.display = 'none';
+    background.style.filter = 'none';
+
+  }
+})
+

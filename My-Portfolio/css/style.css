@@ -280,6 +280,116 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .project-preview {
+    position: fixed;
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .projectPreview {
+    background: #fff;
+    border: 1px solid #dfe1e6;
+  }
+  
+  .project-preview .projectPreview {
+    display: none;
+  }
+  
+  .project-preview .projectPreview.active {
+    display: inline-block;
+    padding: 1.6rem;
+    margin: 6rem 1.6rem 4rem;
+    height: auto;
+    overflow: auto;
+  }
+  
+  .projectHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 13%;
+    overflow: hidden;
+  }
+  
+  .projectPreview h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 138%;
+    color: #172b4d;
+  }
+
+  .projectPreview i {
+    cursor: pointer;
+  }
+  
+  .technologiesPreview {
+    display: flex;
+    gap: 0.8rem;
+    margin: 1.2rem 2.4rem 2.4rem 0;
+  }
+  
+  .technologiesPreview li {
+    padding: 1rem 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 123%;
+    color: #3c3a39;
+    border: 1px solid #979493;
+  }
+  
+  .projectElements {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: auto;
+    justify-content: flex-start;
+  }
+  
+  .projectDescription {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #344563;
+    height: auto;
+    max-height: 22rem;
+    overflow: hidden;
+  }
+
+  .projectImg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .projectContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2rem;
+    height: auto;
+  }
+  
+  .projectButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+  }
+  
+  .cardButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
 }
 
 @media only screen and (min-width: 960px) {
@@ -554,6 +664,104 @@ ul {
   #submitForm {
     align-self: flex-start;
   }
+
+  .project-preview {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  
+  .projectPreview {
+    background: #fff;
+    width: 80%;
+    border: 1px solid #ebecf0;
+  }
+  
+  .project-preview .projectPreview {
+    display: none;
+  }
+  
+  .project-preview .projectPreview.active {
+    display: inline-block;
+    padding: 2.4rem 2.4rem;
+  }
+  
+  .projectHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .projectPreview h2 {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 138%;
+    color: #172b4d;
+  }
+  
+  .projectPreview i {
+    cursor: pointer;
+  }
+  
+  .technologiesPreview {
+    display: flex;
+    gap: 0.8rem;
+    margin: 1.2rem 0 4rem;
+  }
+  
+  .technologiesPreview li {
+    padding: 1rem 1.2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 133%;
+    color: #3c3a39;
+    border: 1px solid #979493;
+  }
+  
+  .projectElements {
+    display: flex;
+    gap: 2.5rem;
+  }
+  
+  .projectDescription {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 188%;
+  }
+  .projectImg {
+    width: 60%;
+    height: auto;
+  }
+  
+  .projectContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+  }
+  
+  .projectButtons {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  
+  .cardButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
 }
 
 h1 {
@@ -882,69 +1090,5 @@ h4 {
   flex: 1;
 }
 
-.project-preview {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
 
-.projectPreview {
-  background: #fff;
-}
 
-.project-preview .projectPreview {
-  display: none;
-}
-
-.project-preview .projectPreview.active {
-  display: inline-block;
-  padding: 2.4rem 2.4rem;
-}
-
-.projectHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.projectPreview h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3.2rem;
-  line-height: 138%;
-  color: #172b4d;
-}
-
-.technologiesPreview {
-  display: flex;
-  gap: 0.8rem;
-  margin: 1.2rem 0 4rem;
-}
-
-.technologiesPreview li {
-  padding: 1rem 1.2rem;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 133%;
-  color: #3c3a39;
-  border: 1px solid #979493;
-}
-
-.projectElements {
-  display: flex;
-  gap: 2.5rem;
-}
-
-.projectDescription {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 188%;
-}
