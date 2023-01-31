@@ -714,7 +714,7 @@ ul {
 
   .technologiesPreview li {
     padding: 1rem 1.2rem;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.5rem;
@@ -729,7 +729,7 @@ ul {
   }
 
   .projectDescription {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
