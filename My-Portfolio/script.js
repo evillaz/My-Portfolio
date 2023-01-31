@@ -12,60 +12,60 @@ const projectInfo = [
   {
     id: 'multiPost',
     name: 'Multi-Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     img: {
       src: './icons/SnapshootPortfolio.svg',
-      alt: 'Multi-Post Stories snapshot'
+      alt: 'Multi-Post Stories snapshot',
     },
-    technologies: ['CSS','HTML','Bootstrap','Ruby on rails'],
+    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby on rails'],
     links: {
       live: '',
-      source: ''
-    }
+      source: '',
+    },
   },
   {
     id: 'card1',
     name: 'Profesional Art Printing Data More',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     img: {
       src: './icons/SnapshootPortfolio.svg',
-      alt: 'Profesional Art Printing snapshot'
+      alt: 'Profesional Art Printing snapshot',
     },
-    technologies: ['HTML','Bootstrap','Ruby on rails'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     links: {
       live: '',
-      source: ''
-    }
+      source: '',
+    },
   },
   {
     id: 'card2',
     name: 'Data Dashboard Healthcare',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     img: {
       src: './icons/SnapshootPortfolio.svg',
-      alt: 'Profesional Art Printing snapshot'
+      alt: 'Profesional Art Printing snapshot',
     },
-    technologies: ['HTML','Bootstrap','Ruby on rails'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     links: {
       live: '',
-      source: ''
-    }
+      source: '',
+    },
   },
   {
     id: 'card3',
     name: 'Website Protfolio',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     img: {
       src: './icons/SnapshootPortfolio.svg',
-      alt: 'Profesional Art Printing snapshot'
+      alt: 'Profesional Art Printing snapshot',
     },
-    technologies: ['HTML','Bootstrap','Ruby on rails'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     links: {
       live: '',
-      source: ''
-    }
+      source: '',
+    },
   },
-]
+];
 
 const projectWindow = document.querySelector('.project-preview');
 
@@ -128,25 +128,23 @@ document
   .querySelectorAll('.projectButton')
   .forEach((project) => {
     project.onclick = () => {
-      projectContainer.style.display = 'flex',
-      background.style.filter = 'blur(5px)',
+      projectContainer.style.display = 'flex';
+      background.style.filter = 'blur(5px)';
       background.style.overflow = 'hidden';
-    const name = project.getAttribute('data-name');
-    previewWindow.forEach((preview) => {
-      const target = preview.getAttribute('data-target');
-      if(name === target) {
-        preview.classList.add('active');
-      }
-    });
-  };
-});
+      const name = project.getAttribute('data-name');
+      previewWindow.forEach((preview) => {
+        const target = preview.getAttribute('data-target');
+        if (name === target) {
+          preview.classList.add('active');
+        }
+      });
+    };
+  });
 
 previewWindow.forEach((close) => {
   close.querySelector('.fa-close').onclick = () => {
     close.classList.remove('active');
     projectContainer.style.display = 'none';
     background.style.filter = 'none';
-
-  }
-})
-
+  };
+});
