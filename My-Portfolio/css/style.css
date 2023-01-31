@@ -388,7 +388,6 @@ ul {
     align-items: center;
     gap: 1.2rem;
   }
-
 }
 
 @media only screen and (min-width: 960px) {
@@ -466,7 +465,7 @@ ul {
     display: flex;
     height: 100%;
   }
-  
+
   #cardElements2 {
     background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("../icons/deskCardWork2.svg");
     background-size: cover;
@@ -672,28 +671,28 @@ ul {
     justify-content: center;
     display: none;
   }
-  
+
   .projectPreview {
     background: #fff;
     width: 80%;
     border: 1px solid #ebecf0;
   }
-  
+
   .project-preview .projectPreview {
     display: none;
   }
-  
+
   .project-preview .projectPreview.active {
     display: inline-block;
     padding: 2.4rem 2.4rem;
   }
-  
+
   .projectHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .projectPreview h2 {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -702,17 +701,17 @@ ul {
     line-height: 138%;
     color: #172b4d;
   }
-  
+
   .projectPreview i {
     cursor: pointer;
   }
-  
+
   .technologiesPreview {
     display: flex;
     gap: 0.8rem;
     margin: 1.2rem 0 4rem;
   }
-  
+
   .technologiesPreview li {
     padding: 1rem 1.2rem;
     font-family: 'Poppins';
@@ -723,12 +722,12 @@ ul {
     color: #3c3a39;
     border: 1px solid #979493;
   }
-  
+
   .projectElements {
     display: flex;
     gap: 2.5rem;
   }
-  
+
   .projectDescription {
     font-family: 'Inter';
     font-style: normal;
@@ -736,31 +735,31 @@ ul {
     font-size: 1.6rem;
     line-height: 188%;
   }
+
   .projectImg {
     width: 60%;
     height: auto;
   }
-  
+
   .projectContent {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 40%;
   }
-  
+
   .projectButtons {
     display: flex;
     align-items: center;
     gap: 0.7rem;
   }
-  
+
   .cardButtons {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1.2rem;
   }
-
 }
 
 h1 {
@@ -1088,6 +1087,3 @@ h4 {
 #footer-container {
   flex: 1;
 }
-
-
-
