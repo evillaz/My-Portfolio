@@ -1,13 +1,13 @@
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>My portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="grid-container" id="main">
@@ -18,10 +18,10 @@
               <div id="logo-placeholder">
                 <a href="index.html">Eduardo Villarreal</a>
               </div>
-              <img class="image" id="menu-button" src="icons/Icon - Menu.svg" alt="menu-button"/>
+              <a href="#" id="menu-button"></a>
               <ul class="flex-container" id="deskNavBar">
                 <li>
-                  <a href="#recent-works" id="portfolioRef">Portfolio</a>
+                  <a href="#recentWorkSection" id="portfolioRef">Portfolio</a>
                 </li>
                 <li>
                   <a href="#aboutMyself" id="aboutRef">About</a>
@@ -29,21 +29,40 @@
                 <li>
                   <a href="#formContainer" id="contactRef">Contact</a>
                 </li>
-                <a id="mailRef"><img class="image" src="icons/deskMailIcon.svg" alt="mail"/></a>
+                <a id="mailRef"><img class="image" src="icons/deskMailIcon.svg" alt="mail" /></a>
               </ul>
             </nav>
+            <section hidden id="menu-items">
+              <ul>
+                <li>
+                  <a href="#recentWorkSection" id="portfolioRef">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#aboutMyself" id="aboutRef">About</a>
+                </li>
+                <li>
+                  <a href="#formContainer" id="contactRef">Contact</a>
+                </li>
+              </ul>
+            </section>
           </div>
-        </header>  
+        </header>
       </section>
       <section class="flex-container" id="headline">
         <div class="flex-container" id="headlineText">
-          <h1 id="primary-text">Hey There.<br> I'm Eduardo</h1>
+          <h1 id="primary-text">
+            Hey There.<br />
+            I'm Eduardo
+          </h1>
           <h3 id="supporting-text">I'm a Software Developer</h3>
-          <p id="description">I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+          <p id="description">
+            I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a
+            project you need coded, don't hesitate to contact me.
+          </p>
         </div>
         <ul class="flex-container" id="social-media">
           <li>
-            <a href="https://github.com/evillaz">            
+            <a href="https://github.com/evillaz">
               <img class="image" id="gitHubtIcon" src="icons/gitHub1.svg" alt="GitHub" />
             </a>
           </li>
@@ -78,21 +97,24 @@
           <div class="placeholder"></div>
           <div class="flex-container" id="multi-postBlock">
             <h3 id="titlePost">Multi-Post Stories</h3>
-              <p id="mpSupportText">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-              <ul class="flex-container" id="tagGroup">
-                <li class="tag">
-                  <a class="tagText" id="css">css</a>
-                </li>
-                <li class="tag">
-                  <a class="tagText" id="html">html</a>
-                </li>
-                <li class="tag">
-                  <a class="tagText" id="bootstrap">bootstrap</a>
-                </li>
-                <li class="tag">
-                  <a class="tagText" id="Ruby">Ruby</a>
-                </li>
-              </ul>
+            <p id="mpSupportText">
+              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever
+              since the 1500s, when an unknown printer took a standard dummy text.
+            </p>
+            <ul class="flex-container" id="tagGroup">
+              <li class="tag">
+                <a class="tagText" id="css">css</a>
+              </li>
+              <li class="tag">
+                <a class="tagText" id="html">html</a>
+              </li>
+              <li class="tag">
+                <a class="tagText" id="bootstrap">bootstrap</a>
+              </li>
+              <li class="tag">
+                <a class="tagText" id="Ruby">Ruby</a>
+              </li>
+            </ul>
             <div>
               <button class="button" type="button">
                 <span id="buttonText">See Project</span>
@@ -100,14 +122,16 @@
             </div>
           </div>
         </div>
-      <div class="grid-container" id="recent-works">
+        <div class="grid-container" id="recent-works">
           <div class="flex-container" id="cardWork">
             <ul class="flex-container" id="cardElements">
               <li>
                 <h3 id="cardTitle">Profesional Art Printing Data</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -121,7 +145,9 @@
                     <a class="tagText" id="Ruby">Ruby</a>
                   </li>
                 </ul>
+              </li>
             </ul>
+
             <div id="cardButton">
               <button class="button" type="button">
                 <span id="buttonText">See Project</span>
@@ -134,7 +160,9 @@
                 <h3 id="cardTitle">Profesional Art Printing Data</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -148,7 +176,9 @@
                     <a class="tagText" id="Ruby">Ruby</a>
                   </li>
                 </ul>
+              </li>
             </ul>
+
             <div id="cardButton">
               <button class="button" type="button">
                 <span id="buttonText">See Project</span>
@@ -161,7 +191,9 @@
                 <h3 id="cardTitle">Profesional Art Printing Data</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -175,7 +207,9 @@
                     <a class="tagText" id="Ruby">Ruby</a>
                   </li>
                 </ul>
+              </li>
             </ul>
+
             <div id="cardButton">
               <button class="button" type="button">
                 <span id="buttonText">See Project</span>
@@ -188,7 +222,9 @@
                 <h3 id="cardTitle">Profesional Art Printing Data</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -202,7 +238,9 @@
                     <a class="tagText" id="Ruby">Ruby</a>
                   </li>
                 </ul>
+              </li>
             </ul>
+
             <div id="cardButton">
               <button class="button" type="button">
                 <span id="buttonText">See Project</span>
@@ -215,7 +253,9 @@
                 <h3 id="cardTitle">Profesional Art Printing Data</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -229,7 +269,9 @@
                     <a class="tagText" id="Ruby">Ruby</a>
                   </li>
                 </ul>
+              </li>
             </ul>
+
             <div id="cardButton">
               <button class="button" type="button">
                 <span id="buttonText">See Project</span>
@@ -242,7 +284,9 @@
                 <h3 id="cardTitle">Profesional Art Printing Data</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -256,7 +300,9 @@
                     <a class="tagText" id="Ruby">Ruby</a>
                   </li>
                 </ul>
+              </li>
             </ul>
+
             <div id="cardButton">
               <button class="button" type="button">
                 <span id="buttonText">See Project</span>
@@ -274,7 +320,9 @@
                 <h3 id="cardTitle">Data Dashboard Health Care</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -288,6 +336,7 @@
                     <a class="tagText" id="Ruby">Ruby</a>
                   </li>
                 </ul>
+              </li>
             </ul>
           </div>
           <div class="flex-container" id="deskCardWork">
@@ -296,7 +345,9 @@
                 <h3 id="cardTitle">Website Portfolio</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -310,6 +361,7 @@
                     <a class="tagText" id="Ruby">Ruby</a>
                   </li>
                 </ul>
+              </li>
             </ul>
           </div>
           <div class="flex-container" id="deskCardWork">
@@ -318,7 +370,9 @@
                 <h3 id="cardTitle">Profesional Art Printing Data More</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -341,7 +395,9 @@
                 <h3 id="cardTitle">Data Dashboard Health Care</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -355,6 +411,7 @@
                     <a class="tagText" id="Ruby">Ruby</a>
                   </li>
                 </ul>
+              </li>
             </ul>
           </div>
           <div class="flex-container" id="deskCardWork">
@@ -363,7 +420,9 @@
                 <h3 id="cardTitle">Website Portfolio</h3>
               </li>
               <li>
-                <p id="cardDesc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                <p id="cardDesc">
+                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+                </p>
               </li>
               <li class="flex-container" id="cardTags">
                 <ul class="flex-container" id="tagGroup">
@@ -380,7 +439,7 @@
               </li>
             </ul>
           </div>
-        </div>  
+        </div>
       </section>
       <section class="flex-container" id="aboutMyself">
         <div id="amHolder">
@@ -389,13 +448,16 @@
               <h2 id="amTitle">About me</h2>
             </li>
             <li>
-              <p id="amDesc">Hello I'm a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+              <p id="amDesc">
+                Hello I'm a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If
+                you like what you see and have a project you need coded, don't hesitate to contact me.
+              </p>
             </li>
             <li>
               <button class="button" type="button">
                 <span id="buttonText">Get My Resume</span>
               </button>
-            </li>          
+            </li>
           </ul>
           <div class="amPlaceHolder"></div>
         </div>
@@ -473,10 +535,10 @@
         <p id="contactDescription">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
         <form class="flex-container" id="contactForm" action="https://formspree.io/f/xnqyndrw" method="POST">
           <label class="formLabel" for="name">name</label>
-          <input class="formElement" id="name" type="text" name="name" placeholder="Full name" maxlength="30" required>
-          <label class="formLabel" for="email">email</label>          
-          <input class="formElement" id="email" type="email" name="email" placeholder="Email address" required>
-          <label class="formLabel" for="message">message</label>          
+          <input class="formElement" id="name" type="text" name="name" placeholder="Full name" maxlength="30" required />
+          <label class="formLabel" for="email">email</label>
+          <input class="formElement" id="email" type="email" name="email" placeholder="Email address" required />
+          <label class="formLabel" for="message">message</label>
           <textarea class="formElement" id="message" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
           <button class="button" id="submitForm" type="submit">Get in touch</button>
         </form>
@@ -484,13 +546,13 @@
       <footer id="footer-container">
         <ul class="flex-container" id="footer-media">
           <li>
-            <a href="https://github.com/evillaz">            
-              <img class="image" id="gitHubLogo" src="icons/gitHub2.svg" alt="GitHub"/>
+            <a href="https://github.com/evillaz">
+              <img class="image" id="gitHubLogo" src="icons/gitHub2.svg" alt="GitHub" />
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/eduardo-villarreal-144a8925a/">
-              <img class="image" id="linkedInLogo" src="icons/linkedIn2.svg" alt="LinkedIn"/>
+              <img class="image" id="linkedInLogo" src="icons/linkedIn2.svg" alt="LinkedIn" />
             </a>
           </li>
           <li>
@@ -512,5 +574,6 @@
         <div class="footerPlaceHolder"></div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
