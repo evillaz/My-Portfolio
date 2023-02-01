@@ -74,20 +74,22 @@ function loadProject() {
     projectWindow.innerHTML += `
       <div class="projectPreview" data-target="${info.id}">
         <div class="projectHeader">
-          <h2>${info.name}</h2>
-          <i class="fa fa-close" style="font-size:24px; color:#67798e"></i>
+          <div class="head">
+            <h2>${info.name}</h2>
+            <i class="fa fa-close" style="font-size:24px; color:#67798e"></i>
+          </div>  
+          <ul class="technologiesPreview">
+            <li>
+              ${info.technologies[0]}
+            </li>
+            <li>
+              ${info.technologies[1]}
+            </li>
+            <li>
+              ${info.technologies[2]}
+            </li>
+          </ul>
         </div>
-        <ul class="technologiesPreview">
-          <li>
-            ${info.technologies[0]}
-          </li>
-          <li>
-            ${info.technologies[1]}
-          </li>
-          <li>
-            ${info.technologies[2]}
-          </li>
-        </ul>
         <div class="projectElements">
           <img class="projectImg" src="${info.img.src}" alt="${info.img.alt}" />
           <div class="projectContent">
@@ -147,4 +149,19 @@ previewWindow.forEach((close) => {
     projectContainer.style.display = 'none';
     background.style.filter = 'none';
   };
+});
+
+////
+const contactForm = document.querySelector('#contactForm');
+const error = document.querySelector('.errorMsg');
+
+contactForm.addEventListener('submit', (event) => {
+  const email = document.getElementById('email').value;
+  if (email.toLowerCase() !== email) {
+    event.preventDefault();
+    error.classList.add('active');
+    error.innerHTML = 'Please write valid an email address with lower letters';
+  } else {
+    contactForm.submit();
+  }
 });

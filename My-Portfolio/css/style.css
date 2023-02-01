@@ -280,6 +280,7 @@ ul {
     height: 100vh;
     display: none;
     overflow: hidden;
+    align-items: center;
   }
 
   .projectPreview {
@@ -292,19 +293,29 @@ ul {
   }
 
   .project-preview .projectPreview.active {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1.6rem;
     margin: 6rem 1.6rem 4rem;
     height: auto;
-    overflow: auto;
+    gap: 2.4rem;
   }
 
   .projectHeader {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
-    height: 13%;
-    overflow: hidden;
+    gap: 1.2rem;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-basis: 6.8rem;
   }
 
   .projectPreview h2 {
@@ -323,7 +334,6 @@ ul {
   .technologiesPreview {
     display: flex;
     gap: 0.8rem;
-    margin: 1.2rem 2.4rem 2.4rem 0;
   }
 
   .technologiesPreview li {
@@ -347,8 +357,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    width: auto;
-    justify-content: flex-start;
+    height: 100%;
   }
 
   .projectDescription {
@@ -360,19 +369,22 @@ ul {
     color: #344563;
     height: auto;
     max-height: 22rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
   .projectImg {
-    width: 100%;
+    max-width: 100%;
+    align-self: center;
+    flex-grow: 1;
   }
 
   .projectContent {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 1.2rem;
-    height: auto;
   }
 
   .projectButtons {
@@ -382,12 +394,20 @@ ul {
     gap: 1.9rem;
   }
 
+  .projectButtons div{
+    flex-grow: 1;
+  }
+
   .cardButtons {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 1.2rem;
+    width: 100%;
+    min-width: max-content;
   }
+
 }
 
 @media only screen and (min-width: 960px) {
@@ -665,11 +685,11 @@ ul {
 
   .project-preview {
     position: fixed;
+    display: none;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
     align-items: center;
-    justify-content: center;
-    display: none;
   }
 
   .projectPreview {
@@ -683,14 +703,28 @@ ul {
   }
 
   .project-preview .projectPreview.active {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
     padding: 2.4rem 2.4rem;
+    margin: 11.1rem 14.2rem;
+    width: 100%;
+    overflow: hidden;
   }
 
   .projectHeader {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .projectPreview h2 {
@@ -709,7 +743,6 @@ ul {
   .technologiesPreview {
     display: flex;
     gap: 0.8rem;
-    margin: 1.2rem 0 4rem;
   }
 
   .technologiesPreview li {
@@ -726,6 +759,7 @@ ul {
   .projectElements {
     display: flex;
     gap: 2.5rem;
+    height: 100%;
   }
 
   .projectDescription {
@@ -734,18 +768,30 @@ ul {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 188%;
+    height: 100%;
   }
 
-  .projectImg {
-    width: 60%;
-    height: auto;
+  .projectDescription p{
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .projectImg {    
+    min-width: 20%;
+    width: auto;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-height: 60vh;
   }
 
   .projectContent {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 40%;
+    width: 42rem;
+    gap: 6.4rem;
   }
 
   .projectButtons {
@@ -759,6 +805,7 @@ ul {
     flex-direction: row;
     align-items: center;
     gap: 1.2rem;
+    min-width: max-content;
   }
 }
 
@@ -1086,4 +1133,8 @@ h4 {
 
 #footer-container {
   flex: 1;
+}
+
+.errorMsg {
+  display: none;
 }
