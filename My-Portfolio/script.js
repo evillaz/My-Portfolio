@@ -67,6 +67,32 @@ const projectInfo = [
   },
 ];
 
+const workCards = documen.querySelector('.recentWorks')
+function getTechList(technologies) {
+  let list= '';
+  if (technologies) {
+    technologies.forEach((tech) => {
+      list += `<li>${tech}</li>`
+    });
+  }
+  return list;
+}
+
+function getCardContent({ name, description, technologies, id}) {
+  return `<h3 id="titlePost">${name}</h3>
+          <p id="mpSupportText">
+            ${description}
+          </p>
+          <ul class="flex-container" id="tagGroup">
+            ${getTechList(technologies)}
+          </ul>
+          <div>
+              <button class="button" data-target=${id} type="button">
+                <span id="buttonText">See Project</span>
+              </button>
+          </div>`
+}
+
 const projectWindow = document.querySelector('.project-preview');
 
 function loadProject() {
