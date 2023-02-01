@@ -28,7 +28,7 @@ const projectInfo = [
     name: 'Profesional Art Printing Data More',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     img: {
-      src: './icons/SnapshootPortfolio.svg',
+      src: './icons/deskCardWork1.svg',
       alt: 'Profesional Art Printing snapshot',
     },
     technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
