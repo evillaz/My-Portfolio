@@ -248,3 +248,7 @@ function validateEmail() {
 email.addEventListener('input', () => {
   validateEmail();
 });
+
+form.addEventListener('submit', () => {
+  validateEmail();
+});
