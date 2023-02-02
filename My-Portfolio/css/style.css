@@ -91,10 +91,20 @@ ul {
   flex-direction: column;
 }
 
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 #worksSection h3 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 #worksSection p {
@@ -245,7 +255,7 @@ ul {
     gap: 2.4rem;
     padding: 12rem 2.4rem;
   }
-  
+
   .mobileCardWork h3 {
     color: #fff;
   }
@@ -290,24 +300,6 @@ ul {
 
   .mobileCardWork .button {
     width: 100%;
-  }
-
-  .bg1 {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork1.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .bg2 {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork2.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .bg3 {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork3.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
 
   .recentWorkSection {
@@ -624,6 +616,24 @@ ul {
   .deskCardWork button {
     display: none;
   }
+  
+  .bg1 {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg2 {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg3 {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork3.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 
   .bg1:hover {
     background-image: url(../icons/deskCardWork1.svg);
@@ -646,7 +656,7 @@ ul {
     width: 100%;
     justify-content: center;
   }
-  
+
   .bg1 {
     background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url(../icons/deskCardWork1.svg);
   }
@@ -681,13 +691,13 @@ ul {
     color: #091e42;
   }
 
-  .deskCardWork h3{
+  .deskCardWork h3 {
     font-size: 3.2rem;
     line-height: 138%;
     color: #fff;
   }
 
-  .deskCardWork p{
+  .deskCardWork p {
     font-size: 1.7rem;
     line-height: 141%;
     color: #fff;
@@ -895,14 +905,14 @@ ul {
     height: 100%;
   }
 
-  .projectDescription p{
+  .projectDescription p {
     display: -webkit-box;
     -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
-  .projectImg {    
+  .projectImg {
     min-width: 20%;
     width: auto;
     height: 100%;
@@ -956,21 +966,11 @@ h1 {
   color: #ff6b00;
 }
 
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
 #supporting-text {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   color: #fff5e1;
-}
-
-p {
-  margin: 0;
-  padding: 0;
 }
 
 #description {

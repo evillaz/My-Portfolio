@@ -86,8 +86,8 @@ function getTechList(technologies) {
   return list;
 }
 
-function getCardContent({ 
-  name, description, technologies, id, 
+function getCardContent({
+  name, description, technologies, id,
 }) {
   return `<div class="cardContent">
             <h3>${name}</h3>
@@ -100,11 +100,10 @@ function getCardContent({
           </div>
           <button class="button projectButton" data-name=${id} type="button">
             <span id="buttonText">See Project</span>
-          </button>`
-};
+          </button>`;
+}
 
 function setFirstCard(card) {
-
   const firstCardContainer = document.createElement('div');
   firstCardContainer.className = 'mpContainer';
   firstCardContainer.id = 'multi-post';
@@ -146,11 +145,11 @@ function setWorkCards(card) {
 }
 
 function loadWorkCards() {
-  for (let i = 0; i < projectInfo.length; i++) {
-    if (i == 0) setFirstCard(projectInfo[i]);
+  for (let i = 0; i < projectInfo.length; i += 1) {
+    if (i === 0) setFirstCard(projectInfo[i]);
     else if (i > 0) setWorkCards(projectInfo[i]);
   }
-  for (let i = 1; i < projectInfo.length; i++) {
+  for (let i = 1; i < projectInfo.length; i += 1) {
     setWorkCards(projectInfo[i]);
   }
 }
