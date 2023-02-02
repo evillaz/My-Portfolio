@@ -238,13 +238,12 @@ const submitButton = document.getElementById('submitForm');
 function validateEmail() {
   const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
   const isNotValid = !emailRegExp.test(email.value);
-  const emailExample = email.value.toLowerCase();
 
   if (isNotValid) {
     submitButton.setCustomValidity(
-      `You should only use lowercase in the email field!!!\nLike: ${emailExample}`,
+      `You should only use lowercase in the email field!!!\nLike: ${email.value.toLowerCase()}`,
     );
-  } else email.setCustomValidity('');
+  } else submitButton.setCustomValidity('');
 }
 
 email.addEventListener('input', () => {
