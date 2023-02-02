@@ -240,7 +240,7 @@ function validateEmail() {
 
   if (isNotValid) {
     form.setCustomValidity(
-      'You have UPPERCASE in the email you typed, Please use lowercase!'
+      'You have UPPERCASE in the email you typed, Please use lowercase!',
     );
   } else email.setCustomValidity('');
 }
