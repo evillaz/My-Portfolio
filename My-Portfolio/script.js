@@ -230,3 +230,22 @@ previewWindow.forEach((close) => {
     background.style.filter = 'none';
   };
 });
+
+const email = document.getElementById('email');
+const form = document.getElementById('formContainer');
+
+function validateEmail() {
+  const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  const isNotValid = !emailRegExp.test(email.value);
+
+  if (isNotValid) {
+    email.setCustomValidity(
+      'You have UPPERCASE in the email you typed, Please use lowercase!',
+    );
+  }
+  else email.setCustomValidity('');
+}
+
+email.addEventListener('input', () => {
+  validateEmail();
+});
