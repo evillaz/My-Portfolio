@@ -86,6 +86,77 @@ ul {
   text-decoration: none;
 }
 
+#worksSection {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#worksSection h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#worksSection p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#worksSection ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.mpElements li {
+  color: #091e42;
+}
+
+#worksSection li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 133%;
+}
+
+.tag {
+  padding: 1rem 1.2rem;
+}
+
+.mpElements .tag {
+  border: 0.1rem solid #8993a4;
+}
+
+.mobileCardWork .tag {
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+  color: #fff;
+}
+
+.deskCardWork .tag {
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+}
+
 @media only screen and (max-width: 960px) {
   #headline {
     gap: 1.2rem;
@@ -95,11 +166,6 @@ ul {
     background-position: bottom -20% right;
     background-size: auto;
     background-origin: border-box;
-  }
-
-  #header {
-    width: 100vw;
-    position: fixed;
   }
 
   #menu-button {
@@ -117,12 +183,6 @@ ul {
     width: auto;
     height: 100vh;
     padding: 2.4rem;
-  }
-
-  #menu-items li {
-    border-bottom: 0.1rem solid #6f6c6b;
-    margin: 0.8rem;
-    padding: 0.8rem;
   }
 
   #menu-items a {
@@ -160,12 +220,6 @@ ul {
     order: 1;
   }
 
-  #recentWorkSection {
-    margin: 0;
-    padding: 12rem 2.4rem;
-    gap: 2.4rem;
-  }
-
   #workPlaceholder {
     padding: 2.4rem;
     background-image: url("../icons/Vectortitle.svg");
@@ -175,44 +229,99 @@ ul {
   }
 
   .placeholder {
-    background-image: url("../icons/ImgPlaceholder1.svg");
-    padding-top: 72.47%;
     width: 100%;
   }
 
-  #multi-postBlock {
-    padding-top: 2.4rem;
+  #worksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    order: 1;
   }
 
-  #multi-post {
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  #multi-postBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  #worksSection {
+    gap: 2.4rem;
+    padding: 12rem 2.4rem;
+  }
+
+  .mobileCardWork h3 {
+    color: #fff;
+  }
+
+  #worksSection h3 {
+    font-size: 3.2rem;
+    line-height: 138%;
+  }
+
+  .mpElements p {
+    color: #091e42;
+  }
+
+  .mobileCardWork p {
+    color: #fff;
+  }
+
+  #worksSection p {
+    font-size: 1.6rem;
+    line-height: 150%;
+  }
+
+  .mpElements .button {
+    width: max-content;
+  }
+
+  .mobileCardWork {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    gap: 1.2rem;
+    padding-top: 8.4rem;
+  }
+
+  .mobileCardWork .cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0 1.6rem 0;
+  }
+
+  .mobileCardWork .button {
+    width: 100%;
+  }
+
+  .recentWorkSection {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 12rem 2.4rem;
+  }
+
+  .mpContainer {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding-top: 5.6rem;
+    gap: 2.4rem;
   }
 
   #tagGroup {
     padding-right: 3.1rem;
   }
 
-  #recent-works {
-    margin: 0;
-    gap: 2.4rem;
-  }
-
-  #cardElements {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../icons/cardBackground.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    gap: 1.2rem;
-    padding: 7.6rem 1.6rem 2.2rem;
-  }
-
-  #cardDesc {
-    font-size: 1.6rem;
-    line-height: 150%;
-  }
-
-  #deskCardWork,
-  #deskCardWork1 {
+  .deskCardWork {
     display: none;
   }
 
@@ -281,6 +390,157 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .project-preview {
+    position: fixed;
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .projectPreview {
+    background: #fff;
+    border: 1px solid #dfe1e6;
+  }
+
+  .project-preview .projectPreview {
+    display: none;
+  }
+
+  .project-preview .projectPreview.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.6rem;
+    margin: 6rem 1.6rem 4rem;
+    height: auto;
+    gap: 2.4rem;
+  }
+
+  .projectHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.2rem;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-basis: 6.8rem;
+  }
+
+  .projectPreview h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 138%;
+    color: #172b4d;
+  }
+
+  .projectPreview i {
+    cursor: pointer;
+  }
+
+  .technologiesPreview {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .technologiesPreview li {
+    padding: 1rem 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 123%;
+    color: #3c3a39;
+    border: 1px solid #979493;
+  }
+
+  #menu-items li {
+    border-bottom: 0.1rem solid #6f6c6b;
+    margin: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  .projectElements {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    height: 100%;
+  }
+
+  .bg1 {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg2 {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg3 {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork3.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .projectDescription {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #344563;
+    height: auto;
+    max-height: 22rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .projectImg {
+    max-width: 100%;
+    align-self: center;
+    flex-grow: 1;
+  }
+
+  .projectContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .projectButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+  }
+
+  .projectButtons div {
+    flex-grow: 1;
+  }
+
+  .cardButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    width: 100%;
+    min-width: max-content;
+  }
 }
 
 @media only screen and (min-width: 960px) {
@@ -320,6 +580,135 @@ ul {
     padding: 19.2rem 0;
   }
 
+  #worksSection {
+    padding: 13rem 14.1rem;
+  }
+
+  .mpContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.4rem;
+    order: 0;
+  }
+
+  #worksContainer {
+    display: grid;
+    order: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 2.4rem 0 0;
+    gap: 3.7rem 2.4rem;
+  }
+
+  .mobileCardWork {
+    display: none;
+  }
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .deskCardWork .cardContent {
+    padding: 17.8rem 1.6rem 1.6rem;
+    flex: 1;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .deskCardWork {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  }
+
+  .deskCardWork button {
+    display: none;
+  }
+
+  .bg1 {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg2 {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg3 {
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork3.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .bg1:hover {
+    background-image: url(../icons/deskCardWork1.svg);
+  }
+
+  .bg2:hover {
+    background-image: url(../icons/deskCardWork2.svg);
+  }
+
+  .bg3:hover {
+    background-image: url(../icons/deskCardWork3.svg);
+  }
+
+  .deskCardWork:hover .cardContent {
+    display: none;
+  }
+
+  .deskCardWork:hover button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mpElements {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-bottom: 10rem;
+    flex-basis: 0;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+
+  .mpContainer h3 {
+    font-size: 4rem;
+    line-height: 130%;
+    color: #091e42;
+  }
+
+  .mpContainer p {
+    font-size: 2rem;
+    line-height: 140%;
+    color: #091e42;
+  }
+
+  .deskCardWork h3 {
+    font-size: 3.2rem;
+    line-height: 138%;
+    color: #fff;
+  }
+
+  .deskCardWork p {
+    font-size: 1.7rem;
+    line-height: 141%;
+    color: #fff;
+  }
+
   #primary-text {
     font-size: 7.2rem;
     line-height: 113%;
@@ -341,15 +730,6 @@ ul {
     align-self: center;
   }
 
-  #recentWorkSection {
-    padding: 13rem 14.1rem;
-  }
-
-  #multi-post {
-    flex-direction: row;
-    gap: 2.4rem;
-  }
-
   #title {
     flex-direction: row;
     gap: 2.4rem;
@@ -368,84 +748,7 @@ ul {
   }
 
   .placeholder {
-    background-image: url("../icons/ImgPlaceholder2.svg");
     width: 60%;
-    padding-bottom: 39%;
-  }
-
-  #multi-postBlock {
-    padding-bottom: 10rem;
-    flex-basis: 0;
-    align-items: flex-start;
-    flex-grow: 1;
-  }
-
-  #recent-works {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0;
-    padding: 2.4rem 0 0;
-    gap: 3.7rem 2.4rem;
-  }
-
-  #cardDesc {
-    font-size: 1.7rem;
-    line-height: 141%;
-  }
-
-  #cardWork {
-    display: none;
-  }
-
-  #deskCardWork {
-    align-items: flex-start;
-    justify-content: flex-end;
-  }
-
-  #deskCardWork1 {
-    justify-content: flex-end;
-    background-image: url("../icons/deskCardWork1.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  #cardElements1 {
-    background-image: url("../icons/deskCardWork2.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    gap: 2.4rem;
-    padding: 17.8rem 1.6rem 1.6rem;
-    flex: 1;
-    justify-content: flex-end;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  #cardElements2 {
-    background-image: url("../icons/deskCardWork3.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    gap: 2.4rem;
-    padding: 22.1rem 1.6rem 1.6rem;
-    flex: 1;
-    justify-content: flex-end;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  #cardElements3 {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url("../icons/deskCardWork1.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    gap: 2.4rem;
-    padding: 17.8rem 1.6rem 1.6rem;
-    flex: 1;
-    justify-content: flex-end;
-    width: 100%;
-    box-sizing: border-box;
   }
 
   #aboutMe {
@@ -519,6 +822,131 @@ ul {
   #submitForm {
     align-self: flex-start;
   }
+
+  .project-preview {
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .projectPreview {
+    background: #fff;
+    width: 80%;
+    border: 1px solid #ebecf0;
+  }
+
+  .project-preview .projectPreview {
+    display: none;
+  }
+
+  .project-preview .projectPreview.active {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2.4rem 2.4rem;
+    margin: 11.1rem 14.2rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .projectHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .projectPreview h2 {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 138%;
+    color: #172b4d;
+  }
+
+  .projectPreview i {
+    cursor: pointer;
+  }
+
+  .technologiesPreview {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .technologiesPreview li {
+    padding: 1rem 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 133%;
+    color: #3c3a39;
+    border: 1px solid #979493;
+  }
+
+  .projectElements {
+    display: flex;
+    gap: 2.5rem;
+    height: 100%;
+  }
+
+  .projectDescription {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 188%;
+    height: 100%;
+  }
+
+  .projectDescription p {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .projectImg {
+    min-width: 20%;
+    width: auto;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-height: 60vh;
+  }
+
+  .projectContent {
+    display: flex;
+    flex-direction: column;
+    width: 42rem;
+    gap: 6.4rem;
+  }
+
+  .projectButtons {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .cardButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+    min-width: max-content;
+  }
 }
 
 h1 {
@@ -544,21 +972,11 @@ h1 {
   color: #ff6b00;
 }
 
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
 #supporting-text {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   color: #fff5e1;
-}
-
-p {
-  margin: 0;
-  padding: 0;
 }
 
 #description {
@@ -575,10 +993,6 @@ p {
 
 a img {
   color: #dbd8d7;
-}
-
-#recent-works {
-  display: grid;
 }
 
 #title {
@@ -603,47 +1017,6 @@ h2 {
 .placeholder {
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-#multi-postBlock {
-  gap: 1.2rem;
-}
-
-#titlePost {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3.2rem;
-  line-height: 138%;
-}
-
-#mpSupportText {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 150%;
-  color: #091e42;
-}
-
-#tagGroup {
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 1.2rem;
-}
-
-.tag {
-  padding: 1rem 1.2rem;
-  border: 0.1rem solid #8993a4;
-}
-
-.tagText {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 133%;
-  color: #091e42;
 }
 
 .button:enabled {
@@ -672,42 +1045,6 @@ button {
   font-size: 1.7rem;
   line-height: 141%;
   color: #fff;
-}
-
-#cardElements {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1;
-}
-
-#cardTitle {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3.2rem;
-  line-height: 138%;
-  color: #fff;
-}
-
-#cardDesc {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #fff;
-}
-
-#cardTags .tag {
-  background: rgba(255, 255, 255, 0.24);
-  border: none;
-}
-
-#cardTags .tagText {
-  color: #fff;
-}
-
-#cardButton * {
-  width: 100%;
 }
 
 #aboutMe {
@@ -845,4 +1182,8 @@ h4 {
 
 #footer-container {
   flex: 1;
+}
+
+.errorMsg {
+  display: none;
 }
