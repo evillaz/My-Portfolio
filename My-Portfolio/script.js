@@ -239,9 +239,8 @@ function validateEmail() {
   const isNotValid = !emailRegExp.test(email.value);
 
   if (isNotValid) {
-    email.setCustomValidity(
-      'You have UPPERCASE in the email you typed, Please use lowercase!',
-    );
+    form.setCustomValidity(
+      'You have UPPERCASE in the email you typed, Please use lowercase!',)
   }
   else email.setCustomValidity('');
 }
