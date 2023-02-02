@@ -244,7 +244,7 @@ function validateEmail() {
     submitButton.setCustomValidity(
       `You should only use lowercase in the email field!!!\nLike: ${emailExample}`,
     );
-  } else email.setCustomValidity('');
+  } else submitButton.setCustomValidity('');
 }
 
 email.addEventListener('input', () => {
