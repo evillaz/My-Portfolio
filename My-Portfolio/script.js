@@ -17,7 +17,7 @@ const projectInfo = [
       src: './icons/SnapshootPortfolio.svg',
       alt: 'Multi-Post Stories snapshot',
     },
-    modalTechs: ['css' ,'html', 'Bootstrap', 'Ruby on rails'],
+    modalTechs: ['css', 'html', 'Bootstrap', 'Ruby on rails'],
     technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
     links: {
       live: '',
@@ -38,7 +38,7 @@ const projectInfo = [
       live: '',
       source: '',
     },
-    background: {desktop: 'bg1'},
+    background: { desktop: 'bg1' },
   },
   {
     id: 'card2',
@@ -54,7 +54,7 @@ const projectInfo = [
       live: '',
       source: '',
     },
-    background: {desktop: 'bg2'},
+    background: { desktop: 'bg2' },
   },
   {
     id: 'card3',
@@ -70,23 +70,25 @@ const projectInfo = [
       live: '',
       source: '',
     },
-    background: {desktop: 'bg3', url: '../icons/SnapshootPortfolio.svg'},
+    background: { desktop: 'bg3' },
   },
 ];
 const workSection = document.getElementById('worksSection');
 const workCards = document.getElementById('worksContainer');
 
 function getTechList(technologies) {
-  let list= '';
+  let list = '';
   if (technologies) {
     technologies.forEach((tech) => {
-      list += `<li class="tag">${tech}</li>`
+      list += `<li class="tag">${tech}</li>`;
     });
   }
   return list;
 }
 
-function getCardContent({ name, description, technologies, id}) {
+function getCardContent({ 
+  name, description, technologies, id, 
+}) {
   return `<div class="cardContent">
             <h3>${name}</h3>
             <p>
@@ -99,7 +101,7 @@ function getCardContent({ name, description, technologies, id}) {
           <button class="button projectButton" data-name=${id} type="button">
             <span id="buttonText">See Project</span>
           </button>`
-}
+};
 
 function setFirstCard(card) {
 
@@ -228,19 +230,4 @@ previewWindow.forEach((close) => {
     projectContainer.style.display = 'none';
     background.style.filter = 'none';
   };
-});
-
-////
-const contactForm = document.querySelector('#contactForm');
-const error = document.querySelector('.errorMsg');
-
-contactForm.addEventListener('submit', (event) => {
-  const email = document.getElementById('email').value;
-  if (email.toLowerCase() !== email) {
-    event.preventDefault();
-    error.classList.add('active');
-    error.innerHTML = 'Please write valid an email address with lower letters';
-  } else {
-    contactForm.submit();
-  }
 });

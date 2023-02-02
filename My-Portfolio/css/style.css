@@ -110,16 +110,16 @@ ul {
   gap: 1.2rem;
 }
 
+.mpElements li {
+  color: #091e42;
+}
+
 #worksSection li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 133%;
-}
-
-.mpElements li {
-  color: #091e42;
 }
 
 .tag {
@@ -130,7 +130,7 @@ ul {
   border: 0.1rem solid #8993a4;
 }
 
-.mobileCardWork .tag { 
+.mobileCardWork .tag {
   background: rgba(255, 255, 255, 0.24);
   border: none;
   color: #fff;
@@ -142,7 +142,7 @@ ul {
   color: #fff;
 }
 
-#header{
+#header {
   width: 100%;
   position: fixed;
 }
@@ -210,12 +210,6 @@ ul {
     order: 1;
   }
 
-  #recentWorkSection {
-    margin: 0;
-    padding: 12rem 2.4rem;
-    gap: 2.4rem;
-  }
-
   #workPlaceholder {
     padding: 2.4rem;
     background-image: url("../icons/Vectortitle.svg");
@@ -251,19 +245,27 @@ ul {
     gap: 2.4rem;
     padding: 12rem 2.4rem;
   }
+  
+  .mobileCardWork h3 {
+    color: #fff;
+  }
 
   #worksSection h3 {
     font-size: 3.2rem;
     line-height: 138%;
   }
 
+  .mpElements p {
+    color: #091e42;
+  }
+
+  .mobileCardWork p {
+    color: #fff;
+  }
+
   #worksSection p {
     font-size: 1.6rem;
     line-height: 150%;
-  }
-
-  .mpElements p {
-    color: #091e42;
   }
 
   .mpElements .button {
@@ -279,16 +281,8 @@ ul {
     padding-top: 8.4rem;
   }
 
-  .mobileCardWork h3 {
-    color: #fff;
-  }
-
-  .mobileCardWork p {
-    color: #fff;
-  }
-
-  .mobileCardWork .cardContent{
-    display:flex;
+  .mobileCardWork .cardContent {
+    display: flex;
     flex-direction: column;
     gap: 1.2rem;
     padding: 0 1.6rem 0;
@@ -304,13 +298,13 @@ ul {
     background-repeat: no-repeat;
   }
 
-  .bg2{
+  .bg2 {
     background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork2.svg);
     background-size: 100%;
     background-repeat: no-repeat;
   }
-  
-  .bg3{
+
+  .bg3 {
     background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork3.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -524,7 +518,7 @@ ul {
     gap: 1.9rem;
   }
 
-  .projectButtons div{
+  .projectButtons div {
     flex-grow: 1;
   }
 
@@ -537,7 +531,6 @@ ul {
     width: 100%;
     min-width: max-content;
   }
-
 }
 
 @media only screen and (min-width: 960px) {
@@ -648,20 +641,12 @@ ul {
     display: none;
   }
 
-  .deskCardWork:hover {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    height: 100%;
-  }
-
   .deskCardWork:hover button {
     display: flex;
     width: 100%;
     justify-content: center;
   }
-
-
+  
   .bg1 {
     background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url(../icons/deskCardWork1.svg);
   }
