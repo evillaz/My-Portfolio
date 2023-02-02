@@ -12,12 +12,13 @@ const projectInfo = [
   {
     id: 'multiPost',
     name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     img: {
       src: './icons/SnapshootPortfolio.svg',
       alt: 'Multi-Post Stories snapshot',
     },
-    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby on rails'],
+    modalTechs: ['css' ,'html', 'Bootstrap', 'Ruby on rails'],
+    technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
     links: {
       live: '',
       source: '',
@@ -26,72 +27,132 @@ const projectInfo = [
   {
     id: 'card1',
     name: 'Profesional Art Printing Data More',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     img: {
-      src: './icons/deskCardWork1.svg',
+      src: './icons/SnapshootPortfolio.svg',
       alt: 'Profesional Art Printing snapshot',
     },
-    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    modalTechs: ['html', 'Bootstrap', 'Ruby on rails'],
+    technologies: ['html', 'bootstrap', 'Ruby'],
     links: {
       live: '',
       source: '',
     },
+    background: {desktop: 'bg1'},
   },
   {
     id: 'card2',
     name: 'Data Dashboard Healthcare',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     img: {
       src: './icons/SnapshootPortfolio.svg',
       alt: 'Profesional Art Printing snapshot',
     },
-    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    modalTechs: ['html', 'Bootstrap', 'Ruby on rails'],
+    technologies: ['html', 'bootstrap', 'Ruby'],
     links: {
       live: '',
       source: '',
     },
+    background: {desktop: 'bg2'},
   },
   {
     id: 'card3',
     name: 'Website Protfolio',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     img: {
       src: './icons/SnapshootPortfolio.svg',
       alt: 'Profesional Art Printing snapshot',
     },
-    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
+    modalTechs: ['html', 'Bootstrap', 'Ruby on rails'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
     links: {
       live: '',
       source: '',
     },
+    background: {desktop: 'bg3', url: '../icons/SnapshootPortfolio.svg'},
   },
 ];
+const workSection = document.getElementById('worksSection');
+const workCards = document.getElementById('worksContainer');
 
-const workCards = documen.querySelector('.recentWorks')
 function getTechList(technologies) {
   let list= '';
   if (technologies) {
     technologies.forEach((tech) => {
-      list += `<li>${tech}</li>`
+      list += `<li class="tag">${tech}</li>`
     });
   }
   return list;
 }
 
 function getCardContent({ name, description, technologies, id}) {
-  return `<h3 id="titlePost">${name}</h3>
-          <p id="mpSupportText">
-            ${description}
-          </p>
-          <ul class="flex-container" id="tagGroup">
-            ${getTechList(technologies)}
-          </ul>
-          <div>
-              <button class="button" data-target=${id} type="button">
-                <span id="buttonText">See Project</span>
-              </button>
-          </div>`
+  return `<div class="cardContent">
+            <h3>${name}</h3>
+            <p>
+              ${description}
+            </p>
+            <ul>
+              ${getTechList(technologies)}
+            </ul>
+          </div>
+          <button class="button projectButton" data-name=${id} type="button">
+            <span id="buttonText">See Project</span>
+          </button>`
 }
+
+function setFirstCard(card) {
+
+  const firstCardContainer = document.createElement('div');
+  firstCardContainer.className = 'mpContainer';
+  firstCardContainer.id = 'multi-post';
+
+  const firstImg = document.createElement('img');
+  firstImg.className = 'placeHolder';
+  firstImg.id = 'placeholderMP';
+  firstImg.src = 'icons/ImgPlaceholder1.svg';
+  firstImg.alt = 'MultiPost Stories';
+
+  firstCardContainer.appendChild(firstImg);
+
+  const firstCardDetail = document.createElement('div');
+  firstCardDetail.className = 'mpElements';
+  firstCardDetail.id = 'multi-postBlock';
+  firstCardDetail.innerHTML += getCardContent(card);
+
+  firstCardContainer.appendChild(firstCardDetail);
+  workSection.appendChild(firstCardContainer);
+}
+
+function setDesktopCards(card) {
+  const cardDetail = document.createElement('div');
+  cardDetail.className = `deskCardWork ${card.background.desktop}`;
+  cardDetail.innerHTML = getCardContent(card);
+  return cardDetail;
+}
+
+function setMobileCards(card) {
+  const cardDetail = document.createElement('div');
+  cardDetail.className = `mobileCardWork ${card.background.desktop}`;
+  cardDetail.innerHTML = getCardContent(card);
+  return cardDetail;
+}
+
+function setWorkCards(card) {
+  workCards.appendChild(setDesktopCards(card));
+  workCards.appendChild(setMobileCards(card));
+}
+
+function loadWorkCards() {
+  for (let i = 0; i < projectInfo.length; i++) {
+    if (i == 0) setFirstCard(projectInfo[i]);
+    else if (i > 0) setWorkCards(projectInfo[i]);
+  }
+  for (let i = 1; i < projectInfo.length; i++) {
+    setWorkCards(projectInfo[i]);
+  }
+}
+loadWorkCards();
 
 const projectWindow = document.querySelector('.project-preview');
 
@@ -105,15 +166,7 @@ function loadProject() {
             <i class="fa fa-close" style="font-size:24px; color:#67798e"></i>
           </div>  
           <ul class="technologiesPreview">
-            <li>
-              ${info.technologies[0]}
-            </li>
-            <li>
-              ${info.technologies[1]}
-            </li>
-            <li>
-              ${info.technologies[2]}
-            </li>
+            ${getTechList(info.modalTechs)}
           </ul>
         </div>
         <div class="projectElements">
