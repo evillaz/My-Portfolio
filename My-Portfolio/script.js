@@ -233,14 +233,16 @@ previewWindow.forEach((close) => {
 
 const email = document.getElementById('email');
 const form = document.getElementById('formContainer');
+const submitButton = document.getElementById('submitForm');
 
 function validateEmail() {
   const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
   const isNotValid = !emailRegExp.test(email.value);
+  const emailExample = email.value.toLowerCase();
 
   if (isNotValid) {
-    form.setCustomValidity(
-      'You have UPPERCASE in the email you typed, Please use lowercase!',
+    submitButton.setCustomValidity(
+      `You should only use lowercase in the email field!!!\nLike: ${emailExample}`,
     );
   } else email.setCustomValidity('');
 }
