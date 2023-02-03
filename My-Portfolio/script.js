@@ -230,3 +230,26 @@ previewWindow.forEach((close) => {
     background.style.filter = 'none';
   };
 });
+
+const email = document.getElementById('email');
+const form = document.getElementById('formContainer');
+const submitButton = document.getElementById('submitForm');
+
+function validateEmail() {
+  const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  const isNotValid = !emailRegExp.test(email.value);
+
+  if (isNotValid) {
+    submitButton.setCustomValidity(
+      `You should only use lowercase in the email field!!!\nLike: ${email.value.toLowerCase()}`,
+    );
+  } else submitButton.setCustomValidity('');
+}
+
+email.addEventListener('input', () => {
+  validateEmail();
+});
+
+form.addEventListener('submit', () => {
+  validateEmail();
+});
