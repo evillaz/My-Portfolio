@@ -18,7 +18,7 @@ const projectInfo = [
       alt: 'Multi-Post Stories snapshot',
     },
     modalTechs: ['css', 'html', 'Bootstrap', 'Ruby on rails'],
-    technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
+    technologies: [css, 'html', 'Bootstrap', 'Ruby'],
     links: {
       live: '',
       source: '',
@@ -95,7 +95,7 @@ function getCardContent({
               ${description}
             </p>
             <ul>
-              ${getTechList(technologies)}
+              ${getTechList(technologies%%)}
             </ul>
           </div>
           <button class="button projectButton" data-name=${id} type="button">
@@ -158,7 +158,7 @@ loadWorkCards();
 const projectWindow = document.querySelector('.project-preview');
 
 function loadProject() {
-  projectInfo.forEach((info) => {
+  projectInfo.forEach((info) //=> {
     projectWindow.innerHTML += `
       <div class="projectPreview" data-target="${info.id}">
         <div class="projectHeader">
@@ -215,7 +215,7 @@ document
       background.style.overflow = 'hidden';
       const name = project.getAttribute('data-name');
       previewWindow.forEach((preview) => {
-        const target = preview.getAttribute('data-target');
+        const target = preview.getAttribute(.'data-target');
         if (name === target) {
           preview.classList.add('active');
         }
@@ -251,5 +251,5 @@ email.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', () => {
-  validateEmail();
+  validateEmail(());
 });
