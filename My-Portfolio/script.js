@@ -10,18 +10,18 @@ document.querySelectorAll('#menu-items li').forEach((item) => {
 
 const projectInfo = [
   {
-    id: 'multiPost',
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    id: 'toDoList',
+    name: 'To-do List',
+    description: '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     img: {
-      src: './icons/SnapshootPortfolio.svg',
-      alt: 'Multi-Post Stories snapshot',
+      src: './icons/toDoListScreenShot.png',
+      alt: 'To-Do List ScreenShot',
     },
-    modalTechs: ['css', 'html', 'Bootstrap', 'Ruby on rails'],
-    technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
+    modalTechs: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     links: {
-      live: '',
-      source: '',
+      live: 'https://evillaz.github.io/to-do-lst/toDoList/dist/',
+      source: 'https://github.com/evillaz/to-do-lst',
     },
   },
   {
@@ -106,13 +106,13 @@ function getCardContent({
 function setFirstCard(card) {
   const firstCardContainer = document.createElement('div');
   firstCardContainer.className = 'mpContainer';
-  firstCardContainer.id = 'multi-post';
+  firstCardContainer.id = 'to-doList';
 
   const firstImg = document.createElement('img');
   firstImg.className = 'placeHolder';
   firstImg.id = 'placeholderMP';
-  firstImg.src = 'icons/ImgPlaceholder1.svg';
-  firstImg.alt = 'MultiPost Stories';
+  firstImg.src = 'icons/toDoListScreenShot.png';
+  firstImg.alt = 'To-Do List ScreenShot';
 
   firstCardContainer.appendChild(firstImg);
 
@@ -180,15 +180,19 @@ function loadProject() {
             </div>
             <div class="projectButtons">
               <div>
-                <button class="button cardButtons" href="${info.links.live}">
-                  <span>See Live</span>
-                  <img src="icons/IconLive.svg" alt="Live" />
+                <button class="button cardButtons">
+                  <a class="modalLinks" href="${info.links.live}">
+                    <span>See Live</span>
+                    <img src="icons/IconLive.svg" alt="Live" />
+                  </a>
                 </button>
               </div>
               <div>
-                <button class="button cardButtons" href="${info.links.live}">
-                  <span>See Source</span>
-                  <img src="icons/IconSource.svg" alt="Source" />
+                <button class="button cardButtons">
+                  <a class="modalLinks" href="${info.links.source}">
+                    <span>See Source</span>
+                    <img src="icons/IconSource.svg" alt="Source" />
+                  </a>
                 </button>
               </div>
             </div>
