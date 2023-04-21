@@ -84,7 +84,7 @@ This is one of the first projects on the early days on microverse program.
 
 We got our first live demo thanks to GitHub pages hosting>>>>
 
-- [Live Demo!!!](https://evillaz.github.io/My-Portfolio/My-Portfolio)
+- [Live Demo!!!](https://evillaz.github.io/My-Portfolio/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
