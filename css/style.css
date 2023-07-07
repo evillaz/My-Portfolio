@@ -157,6 +157,42 @@ p {
   position: fixed;
 }
 
+.mobileCardWork, .deskCardWork {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg1 {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../screenshots/space-hub.png);
+}
+
+.bg2 {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../screenshots/bookstore.png);
+}
+
+.bg3 {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../screenshots/live-tv-shows.png);
+}
+
+.bg4 {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../screenshots/r-r-hall-of-fame.png);
+}
+
+.bg5 {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../screenshots/math.png);
+}
+
+.bg6 {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../screenshots/toDoListScreenShot.png);
+}
+
+.cardContent p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 960px) {
   #headline {
     gap: 1.2rem;
@@ -476,24 +512,6 @@ p {
     height: 100%;
   }
 
-  .bg1 {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork1.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .bg2 {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork2.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .bg3 {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork3.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
   .projectDescription {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -641,34 +659,28 @@ p {
     display: none;
   }
 
-  .bg1 {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork1.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .bg2 {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork2.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .bg3 {
-    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../icons/deskCardWork3.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
   .bg1:hover {
-    background-image: url(../icons/deskCardWork1.svg);
+    background-image: url(../screenshots/space-hub.png);
   }
-
+  
   .bg2:hover {
-    background-image: url(../icons/deskCardWork2.svg);
+    background-image: url(../screenshots/bookstore.png);
   }
-
+  
   .bg3:hover {
-    background-image: url(../icons/deskCardWork3.svg);
+    background-image: url(../screenshots/live-tv-shows.png);
+  }
+  
+  .bg4:hover {
+    background-image: url(../screenshots/r-r-hall-of-fame.png);
+  }
+  
+  .bg5:hover {
+    background-image: url(../screenshots/math.png);
+  }
+  
+  .bg6:hover {
+    background-image: url(../screenshots/toDoListScreenShot.png);
   }
 
   .deskCardWork:hover .cardContent {

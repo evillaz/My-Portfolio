@@ -10,11 +10,106 @@ document.querySelectorAll('#menu-items li').forEach((item) => {
 
 const projectInfo = [
   {
-    id: 'toDoList',
+    id: 'maincard',
+    name: 'Dota 2 Teams Glossary',
+    description: 'Dota2 Pro Teams Glossary is a single-page application (SPA) built with React and Redux. Using the OpenDota API we managed to retrieve and display the whole Glossary of all the recorded Dota 2 teams that faced pro competitions.',
+    img: {
+      src: './screenshots/dota2teamsglossary.png',
+      alt: 'Dota 2 Teams Glossary snapshot',
+    },
+    modalTechs: ['JavaScript', 'React', 'Redux'],
+    technologies: ['JavaScript', 'React', 'Redux'],
+    links: {
+      live: 'https://dota-2-teams-glossary.onrender.com/',
+      source: 'https://github.com/evillaz/dota2-teams-glossary',
+    },
+  },
+  {
+    id: 'card1',
+    name: 'Space Travelers Hub',
+    description: 'Space Travelers Hub consists of Rockets, Missions, and the My Profile section. The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking. Missions The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.',
+    img: {
+      src: './screenshots/space-hub.png',
+      alt: 'Space Travelers Hub snapshot',
+    },
+    modalTechs: ['JavaScript', 'React', 'Redux'],
+    technologies: ['JavaScript', 'React', 'Redux'],
+    links: {
+      live: 'https://space-travelers-hub-2zo8.onrender.com/',
+      source: 'https://github.com/evillaz/space-travelers-hub',
+    },
+    background: { desktop: 'bg1' },
+  },
+  {
+    id: 'card2',
+    name: 'Bookstore',
+    description: 'Bookstore is a website for all book fans. It is a Single Page App (SPA) that allows users to: Display a list of books, Add a book, Remove a selected book',
+    img: {
+      src: './screenshots/bookstore.png',
+      alt: 'Bookstore snapshot',
+    },
+    modalTechs: ['JavaScript', 'React', 'Redux'],
+    technologies: ['JavaScript', 'React', 'Redux'],
+    links: {
+      live: 'https://book-store-mgyp.onrender.com/',
+      source: 'https://github.com/evillaz/bookstore',
+    },
+    background: { desktop: 'bg2' },
+  },
+  {
+    id: 'card3',
+    name: 'Live TV shows',
+    description: 'This API-based Web App was built based on the TVmaze API, and it displays the Homepage and Comments pop-up interfaces. Following a wireframe layout, using Gitflow, Linters, HTML, CSS, Javascript, Webpack and a Javascript testing library called Jest.',
+    img: {
+      src: './screenshots/live-tv-shows.png',
+      alt: 'Live TV shows ScreenShot',
+    },
+    modalTechs: ['HTML', 'CSS', 'JS', 'Webpack'],
+    technologies: ['HTML', 'CSS', 'JS', 'Webpack'],
+    links: {
+      live: 'https://evillaz.github.io/LIVE-TV-SHOWS/dist/',
+      source: 'https://github.com/evillaz/LIVE-TV-SHOWS',
+    },
+    background: { desktop: 'bg3' },
+  },
+  {
+    id: 'card4',
+    name: 'ROCKROLL HALL OF FAME',
+    description: 'ROCK & ROLL HALL OF FAME is a responsive website project with css styling used to present the anually event of ROCK & ROLL HALL OF FAME',
+    img: {
+      src: './screenshots/r-r-hall-of-fame.png',
+      alt: 'ROCK & ROLL HALL OF FAME snapshot',
+    },
+    modalTechs: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    links: {
+      live: 'https://evillaz.github.io/ROCK-ROLL-HALL-OF-FAME-2023/home.html',
+      source: 'https://github.com/evillaz/ROCK-ROLL-HALL-OF-FAME-2023',
+    },
+    background: { desktop: 'bg4' },
+  },
+  {
+    id: 'card5',
+    name: 'Math Magicians',
+    description: 'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations, Read a random math-related quote.',
+    img: {
+      src: './screenshots/math.png',
+      alt: 'Math Magicians snapshot',
+    },
+    modalTechs: ['HTML', 'CSS', 'JS', 'React'],
+    technologies: ['HTML', 'CSS', 'JS', 'React'],
+    links: {
+      live: 'https://mathmag.onrender.com/',
+      source: 'https://github.com/evillaz/mathmagicians',
+    },
+    background: { desktop: 'bg5' },
+  },
+  {
+    id: 'card6',
     name: 'To-do List',
     description: '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     img: {
-      src: './icons/toDoListScreenShot.png',
+      src: './screenshots/toDoListScreenShot.png',
       alt: 'To-Do List ScreenShot',
     },
     modalTechs: ['HTML', 'CSS', 'JavaScript'],
@@ -23,54 +118,7 @@ const projectInfo = [
       live: 'https://evillaz.github.io/to-do-lst/toDoList/dist/',
       source: 'https://github.com/evillaz/to-do-lst',
     },
-  },
-  {
-    id: 'card1',
-    name: 'Profesional Art Printing Data More',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    img: {
-      src: './icons/SnapshootPortfolio.svg',
-      alt: 'Profesional Art Printing snapshot',
-    },
-    modalTechs: ['html', 'Bootstrap', 'Ruby on rails'],
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    links: {
-      live: '',
-      source: '',
-    },
-    background: { desktop: 'bg1' },
-  },
-  {
-    id: 'card2',
-    name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    img: {
-      src: './icons/SnapshootPortfolio.svg',
-      alt: 'Profesional Art Printing snapshot',
-    },
-    modalTechs: ['html', 'Bootstrap', 'Ruby on rails'],
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    links: {
-      live: '',
-      source: '',
-    },
-    background: { desktop: 'bg2' },
-  },
-  {
-    id: 'card3',
-    name: 'Website Protfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    img: {
-      src: './icons/SnapshootPortfolio.svg',
-      alt: 'Profesional Art Printing snapshot',
-    },
-    modalTechs: ['html', 'Bootstrap', 'Ruby on rails'],
-    technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    links: {
-      live: '',
-      source: '',
-    },
-    background: { desktop: 'bg3' },
+    background: { desktop: 'bg6' },
   },
 ];
 const workSection = document.getElementById('worksSection');
@@ -111,7 +159,7 @@ function setFirstCard(card) {
   const firstImg = document.createElement('img');
   firstImg.className = 'placeHolder';
   firstImg.id = 'placeholderMP';
-  firstImg.src = 'icons/toDoListScreenShot.png';
+  firstImg.src = card.img.src;
   firstImg.alt = 'To-Do List ScreenShot';
 
   firstCardContainer.appendChild(firstImg);
@@ -148,9 +196,6 @@ function loadWorkCards() {
   for (let i = 0; i < projectInfo.length; i += 1) {
     if (i === 0) setFirstCard(projectInfo[i]);
     else if (i > 0) setWorkCards(projectInfo[i]);
-  }
-  for (let i = 1; i < projectInfo.length; i += 1) {
-    setWorkCards(projectInfo[i]);
   }
 }
 loadWorkCards();
