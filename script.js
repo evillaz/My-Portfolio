@@ -120,6 +120,54 @@ const projectInfo = [
     },
     background: { desktop: 'bg6' },
   },
+  {
+  id: 'card7',
+    name: 'Recipe App',
+    description: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
+    img: {
+      src: './screenshots/recipeApp.png',
+      alt: 'Recipe App snapshot',
+    },
+    modalTechs: ['Ruby on Rails', 'PostgreeSql', 'CSS'],
+    technologies: ['RubyRails', 'PostgreeSql', 'CSS'],
+    links: {
+      live: 'https://github.com/Kaghenimbale/recipe-app',
+      source: 'https://github.com/Kaghenimbale/recipe-app',
+    },
+    background: { desktop: 'bg7' },
+  },
+  {
+    id: 'card8',
+    name: 'SpendTracker',
+    description: 'SpendTracker is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    img: {
+      src: './screenshots/spendtracker.png',
+      alt: 'SpendTracker snapshot',
+    },
+    modalTechs: ['Ruby on Rails', 'PostgreeSql', 'CSS'],
+    technologies: ['RubyRails', 'PostgreeSql', 'CSS'],
+    links: {
+      live: 'https://spendtracker.onrender.com/',
+      source: 'https://github.com/evillaz/spendtracker',
+    },
+    background: { desktop: 'bg8' },
+  },
+  {
+    id: 'card9',
+    name: 'Car Collection',
+    description: 'Car Collection application is a website application that allows users to add car brand, make reservation of any choice of car, delete car from collection of car and users can see a detail of any car.',
+    img: {
+      src: './screenshots/carCollection.png',
+      alt: 'Car Collection snapshot',
+    },
+    modalTechs: ['Ruby on Rails', 'PostgreeSql', 'React', 'Redux'],
+    technologies: ['RubyRails', 'PostgreeSql', 'React'],
+    links: {
+      live: 'https://github.com/Kaghenimbale/car_collection',
+      source: 'https://github.com/Kaghenimbale/car_collection',
+    },
+    background: { desktop: 'bg9' },
+  },
 ];
 const workSection = document.getElementById('worksSection');
 const workCards = document.getElementById('worksContainer');

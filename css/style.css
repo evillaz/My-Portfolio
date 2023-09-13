@@ -19,6 +19,11 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -185,6 +190,19 @@ p {
 .bg6 {
   background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../screenshots/toDoListScreenShot.png);
 }
+
+.bg7 {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../screenshots/recipeApp.png);
+}
+
+.bg8 {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../screenshots/spendtracker.png);
+}
+
+.bg9 {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../screenshots/carCollection.png);
+}
+
 
 .cardContent p {
   display: -webkit-box;
@@ -620,10 +638,11 @@ p {
     display: grid;
     order: 1;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin: 0;
     padding: 2.4rem 0 0;
     gap: 3.7rem 2.4rem;
+    justify-items: center;
   }
 
   .mobileCardWork {
@@ -647,12 +666,13 @@ p {
   .deskCardWork {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 50rem;
     align-items: flex-start;
     justify-content: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: border-box;
+    width: 35rem;
   }
 
   .deskCardWork button {
